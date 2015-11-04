@@ -13,6 +13,9 @@
 // SASS
 /.sass-cache/
 
+// Grunt
+/.grunt/
+
 // Project stuff
 /docs/dist/
 /dist/
