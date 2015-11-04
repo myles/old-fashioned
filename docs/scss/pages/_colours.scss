@@ -1,0 +1,19 @@
+.colours {
+  @include display(flex);
+  @include justify-content(center);
+  @include align-items(center);
+
+  > .color {
+    @include display(flex);
+    @include align-items(center);
+  }
+
+  .color {
+    height: 10rem;
+    width: 20%;
+    
+    code {
+      margin: 0 auto;
+    }
+  }
+}

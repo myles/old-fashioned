@@ -1,0 +1,11 @@
+// Contextual backgrounds
+
+@include bg-variant('.bg-cape-code', $cape-code);
+
+@include bg-variant('.bg-wild-watermelon', $wild-watermelon);
+
+@include bg-variant('.bg-fire-bush', $fire-bush);
+
+@include bg-variant('.bg-bitter-lemon', $bitter-lemon);
+
+@include bg-variant('.bg-cerulean', $cerulean)
