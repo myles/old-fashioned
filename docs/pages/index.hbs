@@ -1,0 +1,9 @@
+<h1>Old Fashioned</h1>
+
+<ul>
+    {{#each pages}}
+    {{#if data.title}}
+    <li><a href="{{relative ../../page.dest this.dest}}">{{ data.title }}</a></li>
+    {{/if}}
+    {{/each}}
+</ul>

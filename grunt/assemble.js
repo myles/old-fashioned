@@ -5,11 +5,18 @@ module.exports = function (grunt) {
       assets: 'docs/dist/assets',
       partials: ['docs/templates/includes/*.hbs'],
       helpers: ['docs/templates/helpers/helper-*.js'],
-      layout: 'docs/templates/layouts/default.hbs',
-      data: ['docs/template/data/*.{json,yml}']
+			layoutdir: 'docs/templates/layouts',
+      layout: 'default.hbs',
+      data: [
+				'bower.json',
+				'packages.json',
+				'docs/template/data/*.{json,yml}'
+			]
     },
     pages: {
-      src: 'docs/pages/*.hbs',
+			expand: true,
+			cwd: 'docs/pages',
+			src: ['*.hbs'],
       dest: 'docs/dist/'
     }
   };
