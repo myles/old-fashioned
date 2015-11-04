@@ -17,6 +17,7 @@ module.exports = function (grunt) {
 	grunt.registerTask('docs:deploy', [
 		'clean:docs_dist',
 		'docs',
+		'copy',
 		'gh-pages'
 	]);
 	
