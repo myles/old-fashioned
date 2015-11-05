@@ -40,5 +40,16 @@
       "danger-color",
       "info-color"
     ]
+  },
+  {
+    "title": "Social Brand Colours",
+    "slug": "social-brand-colours",
+    "colours": [
+      "twitter-color",
+      "facebook-color",
+      "google-plus-color",
+      "instagram-color",
+      "rss-color"
+    ]
   }
 ]

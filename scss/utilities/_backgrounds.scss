@@ -33,3 +33,13 @@
 @include bg-variant('.bg-danger-color', $danger-color);
 
 @include bg-variant('.bg-info-color', $info-color);
+
+@include bg-variant('.bg-twitter-color', $twitter-color);
+
+@include bg-variant('.bg-facebook-color', $facebook-color);
+
+@include bg-variant('.bg-google-plus-color', $google-plus-color);
+
+@include bg-variant('.bg-instagram-color', $instagram-color);
+
+@include bg-variant('.bg-rss-color', $rss-color);
