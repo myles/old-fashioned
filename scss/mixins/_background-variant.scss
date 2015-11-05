@@ -6,7 +6,11 @@
 @mixin bg-variant($parent, $color) {
   #{$parent} {
     background-color: $color;
-    color: $white;
+    @if (lightness($color) > 50) {
+      color: $black;
+    } @else {
+      color: $white;
+    }
   }
 
   a#{$parent} {
