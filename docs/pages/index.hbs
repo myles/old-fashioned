@@ -1,9 +1,17 @@
 <h1>Old Fashioned</h1>
 
-<ul>
-    {{#each pages}}
-    {{#if data.title}}
-    <li><a href="{{relative ../../page.dest this.dest}}">{{ data.title }}</a></li>
-    {{/if}}
-    {{/each}}
-</ul>
+<div class="section section-colours">
+    <h2>Colours</h2>
+
+    {{> colours }}
+</div>
+
+<div class="section section-components">
+    <h2>Components</h2>
+    
+    <div class="component">
+        <h3>Navigation</h3>
+        
+        {{> navigation }}
+    </div>
+</div>
