@@ -7,12 +7,11 @@ module.exports = function (grunt) {
     local: {
       options: {
         user: {
-          name: 'travis',
+          name: 'local',
           email: 'user@dev.null'
         },
-        repo: 'https://github.com/myles/old-fashioned.git',
         message: 'local deploy'
-      }
+      },
       src: ['**']
     },
     travis: {
