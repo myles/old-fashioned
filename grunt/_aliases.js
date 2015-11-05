@@ -18,7 +18,13 @@ module.exports = function (grunt) {
     'clean:docs_dist',
     'docs',
     'copy',
-    'gh-pages'
+    'gh-pages:local'
+  ]);
+  
+  grunt.registerTask('docs:deploy:travis', [
+    'docs',
+    'copy',
+    'gh-pages:travis'
   ]);
   
   grunt.registerTask('build', [
