@@ -10,7 +10,7 @@ module.exports = function (grunt) {
       data: [
         'bower.json',
         'packages.json',
-        'docs/template/data/*.{json,yml}'
+        'docs/templates/data/*.{json,yml}'
       ]
     },
     pages: {

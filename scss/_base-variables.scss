@@ -8,7 +8,27 @@ $fire-bush: rgb(237, 160, 52);
 $bitter-lemon: rgb(198, 225, 0);
 $cerulean: rgb(36, 165, 212);
 
+// Neutral Colours
+$gray: #55595c;
 $white: #fff;
+$black: #000;
 
-// Global Variable
-$primary-color: $cerulean;
+// Gary Colours
+
+$gray-dark: darken($gray, 10);
+$gray-light: lighten($gray, 20);
+$gray-lighter: lighten($gray, 40);
+$gray-lightest: lighten($gray, 60);
+
+// Secondary Colours
+$primary-color: $cerulean !default;
+$sucess-color: $bitter-lemon !default;
+$warning-color: $fire-bush !default;
+$danger-color: $wild-watermelon !default;
+$info-color: $cerulean !default;
+
+// Social Brand Colours
+
+
+// UI Colours
+

@@ -1,21 +1,13 @@
-<div class="component">
-    <h3>Local Palette</h3>
-
+{{#each colours}}
+<div class="component component-colour-{{slug}}">
+    <h3>{{title}}</h3>
+    
     <div class="colours">
-    	<div class="color bg-cape-code">
-    		<code>$cape-code</code>
-    	</div>
-    	<div class="color bg-wild-watermelon">
-    		<code>$wild-watermelon</code>
-    	</div>
-    	<div class="color bg-fire-bush">
-    		<code>$fire-bush</code>
-    	</div>
-    	<div class="color bg-bitter-lemon">
-    		<code>$bitter-lemon</code>
-    	</div>
-    	<div class="color bg-cerulean">
-    		<code>$cerulean</code>
-    	</div>
+        {{#each colours}}
+        <div class="colour bg-{{this}}">
+            <code>${{this}}</code>
+        </div>
+        {{/each}}
     </div>
 </div>
+{{/each}}

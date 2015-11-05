@@ -3,17 +3,24 @@
   @include justify-content(center);
   @include align-items(center);
 
-  > .color {
+  > .colour {
     @include display(flex);
     @include align-items(center);
   }
 
-  .color {
+  .colour {
+    border: 1px solid $gray-lighter;
+    border-radius: 5px;
     height: 10rem;
     width: 20%;
 
     code {
+      background-color: $gray-lightest;
+      border: 1px solid $gray-lighter;
+      border-radius: 2px;
+      color: $gray-dark;
       margin: 0 auto;
+      padding: .1em;
     }
   }
 }

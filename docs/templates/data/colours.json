@@ -1,0 +1,44 @@
+[
+  {
+    "title": "Local Palette",
+    "slug": "local-palette",
+    "colours": [
+      "cape-code",
+      "wild-watermelon",
+      "fire-bush",
+      "bitter-lemon",
+      "cerulean"
+    ]
+  },
+  {
+    "title": "Neutral Colours",
+    "slug": "neutral-colours",
+    "colours": [
+      "gray",
+      "white",
+      "black"
+    ]
+  },
+  {
+    "title": "Gray Colours",
+    "slug": "gray-colours",
+    "colours": [
+      "gray-dark",
+      "gray",
+      "gray-light",
+      "gray-lighter",
+      "gray-lightest"
+    ]
+  },
+  {
+    "title": "Secondary Colours",
+    "slug": "secondary-colours",
+    "colours": [
+      "primary-color",
+      "sucess-color",
+      "warning-color",
+      "danger-color",
+      "info-color"
+    ]
+  }
+]
