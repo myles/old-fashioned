@@ -16,16 +16,16 @@
     position: relative;
     z-index: 9999;
   }
-  
+
   .brand {
     float: left;
     max-height: $navigation-height;
     padding-left: $navigation-padding;
     padding-right: 2em;
-    
+
     img {
       max-height: $navigation-height;
-      padding: 0.8em 0;
+      padding: .8em 0;
     }
   }
 }
