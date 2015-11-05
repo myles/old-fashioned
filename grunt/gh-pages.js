@@ -23,7 +23,8 @@ module.exports = function (grunt) {
         repo: 'https://' + process.env.GH_TOKEN + '@github.com/myles/old-fashioned.git',
         message: 'travis deploy',
         silent: true
-      }
+      },
+      src: ['**']
     }
   };
   
