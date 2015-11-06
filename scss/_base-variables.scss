@@ -35,3 +35,16 @@ $instagram-color: #211f20;
 $rss-color: #f16522;
 
 // UI Colours
+
+// Typography
+// ----------
+
+$font-family-serif: 'Bree Serif', serif !default;
+$font-family-sans-serif: 'Source Sans Pro', sans-serif !default;
+$font-family-monospace: monospace !default;
+
+$font-family-serif-os-default: "PT Serif", Georgia, "URW Bookman L", serif;
+$font-family-san-serif-os-default: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+
+$font-faimly-primary: $font-family-sans-serif !default;
+$font-family-secondary: $font-family-serif !default;
