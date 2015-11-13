@@ -1,45 +1,5 @@
 // Contextual backgrounds
 
-@include bg-variant('.bg-cape-code', $cape-code);
-
-@include bg-variant('.bg-wild-watermelon', $wild-watermelon);
-
-@include bg-variant('.bg-fire-bush', $fire-bush);
-
-@include bg-variant('.bg-bitter-lemon', $bitter-lemon);
-
-@include bg-variant('.bg-cerulean', $cerulean);
-
-@include bg-variant('.bg-white', $white);
-
-@include bg-variant('.bg-black', $black);
-
-@include bg-variant('.bg-gray-dark', $gray-dark);
-
-@include bg-variant('.bg-gray', $gray);
-
-@include bg-variant('.bg-gray-light', $gray-light);
-
-@include bg-variant('.bg-gray-lighter', $gray-lighter);
-
-@include bg-variant('.bg-gray-lightest', $gray-lightest);
-
-@include bg-variant('.bg-primary-color', $primary-color);
-
-@include bg-variant('.bg-sucess-color', $sucess-color);
-
-@include bg-variant('.bg-warning-color', $warning-color);
-
-@include bg-variant('.bg-danger-color', $danger-color);
-
-@include bg-variant('.bg-info-color', $info-color);
-
-@include bg-variant('.bg-twitter-color', $twitter-color);
-
-@include bg-variant('.bg-facebook-color', $facebook-color);
-
-@include bg-variant('.bg-google-plus-color', $google-plus-color);
-
-@include bg-variant('.bg-instagram-color', $instagram-color);
-
-@include bg-variant('.bg-rss-color', $rss-color);
+@each $name, $hex in $colors {
+  @include bg-variant('.bg-#{$name}', $hex);
+}

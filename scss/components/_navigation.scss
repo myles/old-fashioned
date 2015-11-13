@@ -6,13 +6,12 @@
 // scss-lint:disable NestingDepth, SelectorDepth
 
 .navigation {
-  $base-border-color: $primary-color !default;
+  $base-border-color: #dcdcdc !default;
   $base-border-radius: 3px !default;
   $action-color: #477dca !default;
-  $dark-gray: #333 !default;
   $large-screen: em(860) !default;
   $navigation-padding: 1em;
-  $navigation-background: $dark-gray;
+  $navigation-background: $gray-dark;
   $navigation-color: transparentize($white, .3);
   $navigation-color-hover: $white;
   $navigation-height: 60px;

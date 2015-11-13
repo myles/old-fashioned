@@ -1,0 +1,337 @@
+.highlight {
+  $highlight-background: #fff !default;
+
+  background: $highlight-background;
+
+  @mixin type-styles($map) {
+    @each $property, $value in $map {
+      #{$property}: $value;
+    }
+  }
+
+  $highlight-comment: (
+    background-color: transparent,
+    color: #998,
+    font-style: itlaic,
+  ) !default;
+
+  .c { @include type-styles($highlight-comment); }
+
+  $highlight-error: (
+    background-color: #a61717,
+    color: #e3d2d2
+  ) !default;
+
+  .err { @include type-styles($highlight-error); }
+
+  $highlight-keyword: (
+    font-weight: bold
+  ) !default;
+
+  .k { @include type-styles($highlight-keyword); }
+
+  $highlight-operator: (
+    font-weight: bold
+  ) !default;
+
+  .o { @include type-styles($highlight-operator); }
+
+  $highlight-comment-multiline: (
+    color: #998,
+    font-style: italic
+  ) !default;
+
+  .cm { @include type-styles($highlight-comment-multiline); }
+
+  $highlight-comment-preproc: (
+    color: #999,
+    font-weight: bold
+  ) !default;
+
+  .cp { @include type-styles($highlight-comment-preproc); }
+
+  $highlight-comment-single: (
+    color: #998,
+    font-style: italic
+  ) !default;
+
+  .c1 { @include type-styles($highlight-comment-single); }
+
+  $highlight-comment-special: (
+    color: #999,
+    font-weight: bold,
+    font-style: italic
+  ) !default;
+
+  .cs { @include type-styles($highlight-comment-special); }
+
+  $highlight-generic-deleted: (
+    color: #000,
+    background-color: #fdd
+  ) !default;
+
+  .gd { @include type-styles($highlight-generic-deleted); }
+
+  $highlight-generic-deleted-specific: (
+    color: #000,
+    background-color: #faa
+  ) !default;
+
+  .gd .x { @include type-styles($highlight-generic-deleted-specific); }
+
+  $highlight-generic-emph: (
+    font-style: italic
+  ) !default;
+
+  .ge { @include type-styles($highlight-generic-emph); }
+
+  $highlight-generic-error: (
+    color: #a00
+  ) !default;
+
+  .gr { @include type-styles($highlight-generic-error); }
+
+  $highlight-generic-heading: (
+    color: #999
+  ) !default;
+
+  .gh { @include type-styles($highlight-generic-heading); }
+  
+  .gi {
+    // Generic.Inserted
+    color: #000;
+    background-color: #dfd;
+    
+    .x {
+      // Generic.Inserted.Specific
+      color: #000;
+      background-color: #afa;
+    }
+  }
+  
+  .go {
+    // Generic.Output
+    color: #888
+  }
+  
+  .gp {
+    // Generic.Prompt
+    color: #555;
+  }
+  
+  .gs {
+    // Generic.Strong
+    font-weight: bold;
+  }
+  
+  .gu {
+    // Generic.Subheading
+    color: #aaa;
+  }
+  
+  .gt {
+    // Generic.Traceback
+    color: #a00;
+  }
+  
+  .kc {
+    // Keyword.Constant
+    font-weight: bold;
+  }
+  
+  .kd {
+    // Keyword.Declaration
+    font-weight: bold;
+  }
+  
+  .kp {
+    // Keyword.Pseudo
+    font-weight: bold;
+  }
+  
+  .kr {
+    // Keyword.Reserved
+    font-weight: bold;
+  }
+  
+  .kt {
+    // Keyword.Type
+    color: #458;
+    font-weight: bold;
+  }
+  
+  .m {
+    // Literal.Number
+    color: #099;
+  }
+  
+  .s {
+    // Literal.String
+    color: #d14;
+  }
+  
+  .na {
+    // Name.Attribute
+    color: #008080;
+  }
+  
+  .nb {
+    // Name.Builtin
+    color: #0086B3;
+  }
+  
+  .nc {
+    // Name.Class
+    color: #458;
+    font-weight: bold;
+  }
+  
+  .no {
+    // Name.Constant
+    color: #008080;
+  }
+  
+  .ni {
+    // Name.Entity
+    color: #800080;
+  }
+  
+  .ne {
+    // Name.Exception
+    color: #900;
+    font-weight: bold;
+  }
+   
+  .nf {
+    // Name.Function
+    color: #900;
+    font-weight: bold;
+  }
+  
+  .nn {
+    // Name.Namespace
+    color: #555;
+  }
+  
+  .nt {
+    // Name.Tag
+    color: #000080;
+  }
+  
+  .nv {
+    // Name.Variable
+    color: #008080;
+  }
+  
+  // Operator.Word
+  .ow {
+    font-weight: bold;
+  }
+  
+  .w {
+    // Text.Whitespace
+    color: #bbb;
+  }
+  
+  .mf {
+    // Literal.Number.Float 
+    color: #099;
+  }
+  
+  .mh {
+    // Literal.Number.Hex 
+    color: #099;
+  }
+  
+  .mi {
+    // Literal.Number.Integer 
+    color: #099;
+  }
+  
+  .mo {
+    // Literal.Number.Oct 
+    color: #099;
+  }
+  
+  .sb {
+    // Literal.String.Backtick 
+    color: #d14;
+  }
+  
+  .sc {
+    // Literal.String.Char 
+    color: #d14;
+  }
+  
+  .sd {
+    // Literal.String.Doc 
+    color: #d14;
+  }
+  
+  .s2 {
+    // Literal.String.Double 
+    color: #d14;
+  }
+  
+  .se {
+    // Literal.String.Escape 
+    color: #d14;
+  }
+  
+  .sh {
+    // Literal.String.Heredoc 
+    color: #d14;
+  }
+  
+  .si {
+    // Literal.String.Interpol 
+    color: #d14;
+  }
+  
+  .sx {
+    // Literal.String.Other 
+    color: #d14;
+  }
+  
+  .sr {
+    // Literal.String.Regex
+    color: #009926;
+  }
+  
+  .s1 {
+    // Literal.String.Single
+    color: #d14;
+  }
+  
+  .ss {
+    // Literal.String.Symbol
+    color: #990073;
+  }
+  
+  .bp {
+    // Name.Builtin.Pseudo
+    color: #999;
+  }
+  
+  .vc {
+    // Name.Variable.Class
+    color: #008080;
+  }
+  
+  .vg {
+    // Name.Variable.Global
+    color: #008080;
+  }
+
+  $highlight-name-variable-instance: (
+    color: #008080
+  );
+
+  .vi { @include type-styles($highlight-name-variable-instance); }
+
+  $highlight-literal-number-integer-long: (
+    color: #099
+  ) !default;
+
+  .il { @include type-styles($highlight-comment); }
+}

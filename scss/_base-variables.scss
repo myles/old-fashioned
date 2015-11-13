@@ -14,7 +14,6 @@ $white: #fff;
 $black: #000;
 
 // Gary Colours
-
 $gray-dark: darken($gray, 10);
 $gray-light: lighten($gray, 20);
 $gray-lighter: lighten($gray, 40);
@@ -34,16 +33,27 @@ $google-plus-color: #df4a32;
 $instagram-color: #211f20;
 $rss-color: #f16522;
 
+$colors: ('cape-code', $cape-code), ('wild-watermelon', $wild-watermelon),
+         ('fire-bush', $fire-bush), ('bitter-lemon', $bitter-lemon),
+         ('cerulean', $cerulean), ('gray', $gray), ('white', $white),
+         ('black', $black), ('gray-black', $gray-dark),
+         ('gray-light', $gray-light), ('gray-lighter, '$gray-lighter),
+         ('gray-lightest', $gray-lightest), ('primary-color', $primary-color),
+         ('sucess-color', $sucess-color), ('warning-color', $warning-color),
+         ('danger-color', $danger-color), ('instagram-color', $instagram-color),
+         ('twitter-color', $twitter-color), ('info-color', $info-color),
+         ('facebook-color', $facebook-color), ('rss-color', $rss-color)
+         ('google-plus-color', $google-plus-color);
+
 // UI Colours
 
 // Typography
 // ----------
-
 $font-family-serif: 'Bree Serif', serif !default;
 $font-family-sans-serif: 'Source Sans Pro', sans-serif !default;
 $font-family-monospace: monospace !default;
 
-$font-family-serif-os-default: "PT Serif", Georgia, "URW Bookman L", serif;
+$font-family-serif-os-default: Georgia, "URW Bookman L", serif;
 $font-family-san-serif-os-default: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
 
 $font-faimly-primary: $font-family-sans-serif !default;
