@@ -1,0 +1,41 @@
+.font-families {
+  @include display(flex);
+  @include justify-content(center);
+  @include align-items(center);
+
+  > .font-family {
+    @include align-items(center);
+  }
+  
+  .font-family {
+    @extend .bg-gray-lightest;
+    
+    width: 33%;
+    margin: .5em;
+    padding: .5em;
+    
+    border: 1px solid $gray-lighter;
+    border-radius: 5px;
+  }
+  
+  h6 {
+    margin: 0;
+  }
+  
+  p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .font-family-sans-serif p {
+    font-family: $font-family-sans-serif;
+  }
+  
+  .font-family-serif p {
+    font-family: $font-family-serif;
+  }
+  
+  .font-family-monospace p {
+    font-family: $font-family-monospace;
+  }
+}

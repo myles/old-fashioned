@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Sans Serif",
+    "slug": "sans-serif",
+    "font-family": "font-family-sans-serif"
+  },
+  {
+    "title": "Serif",
+    "slug": "serif",
+    "font-family": "font-family-serif"
+  },
+  {
+    "title": "Monospace",
+    "slug": "monospace",
+    "font-family": "font-family-monospace"
+  }
+]
