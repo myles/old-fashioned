@@ -1,0 +1,33 @@
+<div class="page-header">
+    <h1>Typography</h1>
+</div>
+
+<div class="section section-typography-fonts">
+    <h2>Fonts</h2>
+    
+    {{> typography_font-family }}
+</div>
+
+<div class="section section-typography-paragraph">
+    <h2>Paragraph</h2>
+    
+    <p>IPhone chicharrones put a bird on it, locavore echo park narwhal tumblr keytar vinyl quinoa asymmetrical sriracha raw denim shabby chic. Health goth kickstarter humblebrag, slow-carb raw denim organic tofu swag fap gastropub. Chicharrones tofu pug organic. Listicle thundercats 8-bit, kombucha before they sold out blue bottle kickstarter pickled williamsburg polaroid celiac master cleanse +1 craft beer.</p>
+    <p>Small batch heirloom artisan plaid sartorial. Mustache waistcoat messenger bag, ennui tofu readymade vegan paleo art party slow-carb seitan mumblecore artisan VHS try-hard. Try-hard umami cold-pressed, four dollar toast raw denim skateboard williamsburg franzen ethical yr normcore.</p>
+    <p>Kogi meggings small batch bespoke kombucha, tote bag paleo. Selvage vice 8-bit tattooed, scenester photo booth pop-up skateboard. IPhone normcore photo booth locavore meditation. Poutine leggings fap, vice migas direct trade cold-pressed street art irony small batch. Green juice 8-bit gastropub venmo scenester seitan. Intelligentsia 8-bit tote bag, dreamcatcher art party kale chips yr scenester selvage cardigan pug slow-carb. Green juice migas meh paleo.</p>
+</div>
+
+<div class="section section-typography-headings">
+    <h2>Headings</h2>
+    
+    {{#times 6}}
+    <h{{this}}>Heading {{this}}</h{{this}}>
+    {{/times}}
+</div>
+
+<div class="seciton section-typography-display">
+    <h2>Display</h2>
+    
+    {{#times 4}}
+    <p class="display-{{this}}">Display {{this}}</p>
+    {{/times}}
+</div>

@@ -1,0 +1,13 @@
+{{#each colours}}
+<div class="component component-colour-{{slug}}">
+    <h3>{{title}}</h3>
+    
+    <div class="colours">
+        {{#each colours}}
+        <div class="colour bg-{{this}}">
+            <code>${{this}}</code>
+        </div>
+        {{/each}}
+    </div>
+</div>
+{{/each}}

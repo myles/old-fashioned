@@ -9,6 +9,7 @@ module.exports = function (grunt) {
       ],
       files: [
         'docs/pages/*.hbs',
+        'docs/template/**/*.js',
         'docs/templates/**/*.hbs',
         'docs/templates/**/*.yml',
         'docs/templates/**/*.json'
