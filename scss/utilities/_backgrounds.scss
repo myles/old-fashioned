@@ -1,5 +1,5 @@
 // Contextual backgrounds
 
 @each $name, $hex in $colors {
-  @include bg-variant('.bg-#{$name}', $hex);
+  @include bg-variant('.bg-#{$name}, %bg-#{$name}', $hex);
 }

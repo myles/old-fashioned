@@ -6,35 +6,34 @@
   > .font-family {
     @include align-items(center);
   }
-  
+
   .font-family {
-    @extend .bg-gray-lightest;
-    
-    width: 33%;
-    margin: .5em;
-    padding: .5em;
-    
+    @extend %bg-gray-lightest;
+
     border: 1px solid $gray-lighter;
     border-radius: 5px;
+    margin: .5em;
+    padding: .5em;
+    width: 33%;
   }
-  
+
   h6 {
     margin: 0;
   }
-  
+
   p {
     margin: 0;
     padding: 0;
   }
-  
+
   .font-family-sans-serif p {
     font-family: $font-family-sans-serif;
   }
-  
+
   .font-family-serif p {
     font-family: $font-family-serif;
   }
-  
+
   .font-family-monospace p {
     font-family: $font-family-monospace;
   }
