@@ -2,10 +2,29 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Old Fashioned {{#if title}}| {{ title }}{{/if}}</title>
+        <title>{{#if title}}{{ title }} |{{/if}} Old Fashioned</title>
 		<link rel="stylesheet" href="{{assets}}/docs.css">
     </head>
     <body>
-        {{> body }}
+        <header class="navigation" role="banner">
+            <div class="navigation-wrapper">
+                <a href="/index.html" class="brand">
+                    Old Fashioned
+                </a>
+                
+                <nav role="navigation">
+                    <ul id="js-navigation-menu" class="navigation-menu show">
+                        <li class="nav-link"><a href="/index.html">Home</a></li>
+                        <li class="nav-link"><a href="/colours.html">Colours</a></li>
+                        <li class="nav-link"><a href="/typography.html">Typography</a></li>
+                        <li class="nav-link"><a href="/components.html">Components</a></li>
+                    </ul>
+                </nav>  
+            </div>
+        </header>
+        
+        <div class="container">
+            {{> body }}
+        </div>
     </body>
 </html>
