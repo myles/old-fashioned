@@ -3,6 +3,8 @@
 // MIT License
 // https://github.com/myles/old-fashioned/blob/master/LICENSE
 
+@import 'modular-scale';
+
 // Core variables and mixins
 @import 'base-variables';
 @import 'mixins/mixins';
@@ -13,5 +15,6 @@
 @import 'neat';
 
 // Core CSS
+@import 'base/base';
 @import 'utilities/utilities';
 @import 'components/components';

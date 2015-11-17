@@ -3,7 +3,8 @@ module.exports = function (grunt) {
     loadPath: [
       './scss/',
       './bower_components/bourbon/app/assets/stylesheets/',
-      './bower_components/neat/app/assets/stylesheets/'
+      './bower_components/neat/app/assets/stylesheets/',
+      './bower_components/modular-scale/stylesheets/'
     ],
     precision: 6,
     sourcemap: 'auto',

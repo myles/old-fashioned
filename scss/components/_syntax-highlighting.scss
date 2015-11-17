@@ -159,10 +159,11 @@
 
   .kd { @include type-styles($highlight-keyword-declaration); }
 
-  .kp {
-    // Keyword.Pseudo
-    font-weight: bold;
-  }
+  $highlight-keyword-pseudo: (
+    font-weight: bold
+  ) !default;
+
+  .kp { @include type-styles($highlight-keyword-pseudo); }
 
   .kr {
     // Keyword.Reserved
