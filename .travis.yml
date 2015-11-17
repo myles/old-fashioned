@@ -24,5 +24,6 @@ deploy:
   bucket: old-fashioned
   local-dir: dist
   acl: public_read
+  skip_cleanup: true
   on:
     repo: myles/old-fashioned
