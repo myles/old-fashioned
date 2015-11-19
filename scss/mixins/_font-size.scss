@@ -2,8 +2,7 @@
   @each $breakpoint, $font-size in $font-size-root {
     @if $breakpoint == null {
       font-size: $font-size;
-    }
-    @else {
+    } @else {
       @include media-breakpoint-up($breakpoint) {
         font-size: $font-size;
       }
