@@ -87,3 +87,95 @@ hr {
   margin-bottom: $spacer-y;
   margin-top: $spacer-y;
 }
+
+// Emphasis
+// --------
+
+small,
+.small {
+  font-size: 80%;
+  font-weight: normal;
+}
+
+mark,
+.mark {
+  background-color: $warning-color;
+  padding: .2em;
+}
+
+// List
+// ----
+
+.list-unstyled,
+%list-unstyled {
+  @include list-unstyled;
+}
+
+// Inline turns list items into inline-block
+.list-inline {
+  @extend %list-unstyled;
+  margin-left: -5px;
+
+  > li {
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+// Horizontal description lists w/ grid classes
+.dl-horizontal {
+  @include clearfix;
+
+  margin-left: -$gutter;
+  margin-right: -$gutter;
+}
+
+// Misc
+// ----
+
+.initiamlsm {
+  font-size: 90%;
+  text-transform: uppercase;
+}
+
+.blockquote {
+  border-left: .25rem solid $blockquote-border-color;
+  font-size: $blockquote-font-size;
+  margin-bottom: $spacer;
+  padding: ($spacer / 2) $spacer;
+
+  p,
+  ul,
+  ol {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  footer {
+    color: blockquote-small-color;
+    display: block;
+    font-size: 80%;
+    line-height: $line-height;
+
+    &::before {
+      content: '\2014 \00A0';
+    }
+  }
+}
+
+.blockquote-reverse {
+  border-left: 0;
+  border-right: .25rem solid $blockquote-border-color;
+  padding-left: 0;
+  padding-right: $spacer;
+  text-align: right;
+
+  footer {
+    &::before { content: ''; }
+    &::after {
+      content: '\00A0 \2014';
+    }
+  }
+}

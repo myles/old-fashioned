@@ -8,6 +8,21 @@ $fire-bush: rgb(237, 160, 52);
 $bitter-lemon: rgb(198, 225, 0);
 $cerulean: rgb(36, 165, 212);
 
+// Complements
+$cape-code-complement: complement($cape-code);
+$wild-watermelon-complement: complement($wild-watermelon);
+$fire-bush-complement: complement($fire-bush);
+$bitter-lemon-complement: complement($bitter-lemon);
+$cerulean-complement: complement($cerulean);
+
+// Inverts
+$cape-code-invert: invert($cape-code);
+$wild-watermelon-invert: invert($wild-watermelon);
+$fire-bush-invert: invert($fire-bush);
+$bitter-lemon-invert: invert($bitter-lemon);
+$cerulean-invert: invert($cerulean);
+
+
 // Neutral Colours
 $gray: #55595c;
 $white: #fff;
@@ -33,17 +48,38 @@ $google-plus-color: #df4a32;
 $instagram-color: #211f20;
 $rss-color: #f16522;
 
-$colors: ('cape-code', $cape-code), ('wild-watermelon', $wild-watermelon),
-         ('fire-bush', $fire-bush), ('bitter-lemon', $bitter-lemon),
-         ('cerulean', $cerulean), ('gray', $gray), ('white', $white),
-         ('black', $black), ('gray-black', $gray-dark),
-         ('gray-light', $gray-light), ('gray-lighter, '$gray-lighter),
-         ('gray-lightest', $gray-lightest), ('primary-color', $primary-color),
-         ('sucess-color', $sucess-color), ('warning-color', $warning-color),
-         ('danger-color', $danger-color), ('instagram-color', $instagram-color),
-         ('twitter-color', $twitter-color), ('info-color', $info-color),
-         ('facebook-color', $facebook-color), ('rss-color', $rss-color),
-         ('google-plus-color', $google-plus-color);
+$colors: ('cape-code', $cape-code),
+         ('wild-watermelon', $wild-watermelon),
+         ('fire-bush', $fire-bush),
+         ('bitter-lemon', $bitter-lemon),
+         ('cerulean', $cerulean),
+         ('gray', $gray),
+         ('white', $white),
+         ('black', $black),
+         ('gray-black', $gray-dark),
+         ('gray-light', $gray-light),
+         ('gray-lighter, '$gray-lighter),
+         ('gray-lightest', $gray-lightest),
+         ('primary-color', $primary-color),
+         ('sucess-color', $sucess-color),
+         ('warning-color', $warning-color),
+         ('danger-color', $danger-color),
+         ('instagram-color', $instagram-color),
+         ('twitter-color', $twitter-color),
+         ('info-color', $info-color),
+         ('facebook-color', $facebook-color),
+         ('rss-color', $rss-color),
+         ('google-plus-color', $google-plus-color),
+         ('cape-code-complement', $cape-code-complement),
+         ('wild-watermelon-complement', $wild-watermelon-complement),
+         ('fire-bush-complement', $fire-bush-complement),
+         ('bitter-lemon-complement', $bitter-lemon-complement),
+         ('cerulean-complement', $cerulean-complement),
+         ('cape-code-invert', $cape-code-invert),
+         ('wild-watermelon-invert', $wild-watermelon-invert),
+         ('fire-bush-invert', $fire-bush-invert),
+         ('bitter-lemon-invert', $bitter-lemon-invert),
+         ('cerulean-invert', $cerulean-invert);
 
 // Body
 // ----
