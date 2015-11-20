@@ -30,6 +30,7 @@ module.exports = function (grunt) {
   grunt.registerTask('build', [
     'clean:dist',
     'sass:core',
+    'postcss',
     'cssmin'
   ]);
 };
