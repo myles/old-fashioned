@@ -11,7 +11,10 @@ module.exports = function (grunt) {
         'bower.json',
         'packages.json',
         'site/templates/data/*.{json,yml}'
-      ]
+      ],
+      marked: {
+        gfm: true
+      }
     },
     pages: {
       files: [{
