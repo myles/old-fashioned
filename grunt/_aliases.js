@@ -4,6 +4,7 @@ module.exports = function (grunt) {
   ]);
   
   grunt.registerTask('site', [
+    'exec:docs_update',
     'sass:site',
     'postcss:site',
     'assemble'
