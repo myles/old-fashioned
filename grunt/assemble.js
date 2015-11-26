@@ -21,6 +21,7 @@ module.exports = function (grunt) {
     },
     docs: {
       expand: true,
+      engine: 'handlebars',
       cwd: 'docs',
       src: ['*.md'],
       dest: 'site/dist/docs/'
