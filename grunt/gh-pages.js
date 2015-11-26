@@ -2,7 +2,7 @@ module.exports = function (grunt) {
   var config = {
     options: {
       branch: 'gh-pages',
-      base: 'docs/dist'
+      base: 'site/dist'
     },
     local: {
       options: {

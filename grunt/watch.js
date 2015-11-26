@@ -8,22 +8,22 @@ module.exports = function (grunt) {
         'assemble'
       ],
       files: [
-        'docs/pages/*.hbs',
-        'docs/template/**/*.js',
-        'docs/templates/**/*.hbs',
-        'docs/templates/**/*.yml',
-        'docs/templates/**/*.json'
+        'site/pages/*.hbs',
+        'site/template/**/*.js',
+        'site/templates/**/*.hbs',
+        'site/templates/**/*.yml',
+        'site/templates/**/*.json'
       ]
     },
     sass: {
       tasks: [
-        'sass:docs'
+        'sass:site'
       ],
       files: [
         'scss/*.scss',
         'scss/**/*.scss',
-        'docs/scss/**/*.scss',
-        'docs/scss/docs.scss'
+        'site/scss/**/*.scss',
+        'site/scss/style.scss'
       ]
     }
   };

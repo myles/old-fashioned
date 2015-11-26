@@ -20,10 +20,10 @@ module.exports = function (grunt) {
         'dist/old-fashioned.css': 'scss/old-fashioned.scss'
       }
     },
-    docs: {
+    site: {
       options: options,
       files: {
-        'docs/dist/assets/docs.css': 'docs/scss/docs.scss'
+        'site/dist/assets/style.css': 'site/scss/style.scss'
       }
     }
   };

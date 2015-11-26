@@ -5,8 +5,8 @@ module.exports = function (grunt) {
         {
           expand: true,
           flatten: true,
-          src: [ 'docs/CNAME' ],
-          dest: 'docs/dist/',
+          src: [ 'site/CNAME' ],
+          dest: 'site/dist/',
           filter: 'isFile'
         }
       ]

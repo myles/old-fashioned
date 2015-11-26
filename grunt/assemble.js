@@ -2,22 +2,22 @@ module.exports = function (grunt) {
   var config = {
     options: {
       flatten: true,
-      assets: 'docs/dist/assets',
-      partials: ['docs/templates/includes/*.hbs'],
-      helpers: ['docs/templates/helpers/helper-*.js'],
-      layoutdir: 'docs/templates/layouts',
+      assets: 'site/dist/assets',
+      partials: ['site/templates/includes/*.hbs'],
+      helpers: ['site/templates/helpers/helper-*.js'],
+      layoutdir: 'site/templates/layouts',
       layout: 'default.hbs',
       data: [
         'bower.json',
         'packages.json',
-        'docs/templates/data/*.{json,yml}'
+        'site/templates/data/*.{json,yml}'
       ]
     },
     pages: {
       expand: true,
-      cwd: 'docs/pages',
+      cwd: 'site/pages',
       src: ['*.hbs'],
-      dest: 'docs/dist/'
+      dest: 'site/dist/'
     }
   };
   

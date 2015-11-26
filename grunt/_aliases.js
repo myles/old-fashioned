@@ -3,26 +3,26 @@ module.exports = function (grunt) {
     'scsslint'
   ]);
   
-  grunt.registerTask('docs', [
-    'sass:docs',
+  grunt.registerTask('site', [
+    'sass:site',
     'assemble'
   ]);
   
-  grunt.registerTask('docs:develop', [
-    'docs',
+  grunt.registerTask('site:develop', [
+    'site',
     'connect',
     'watch'
   ]);
   
-  grunt.registerTask('docs:deploy', [
-    'clean:docs_dist',
-    'docs',
+  grunt.registerTask('site:deploy', [
+    'clean:site_dist',
+    'site',
     'copy',
     'gh-pages:local'
   ]);
   
-  grunt.registerTask('docs:deploy:travis', [
-    'docs',
+  grunt.registerTask('site:deploy:travis', [
+    'site',
     'copy',
     'gh-pages:travis'
   ]);

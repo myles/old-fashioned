@@ -8,8 +8,8 @@ module.exports = function (grunt) {
     src: [
       'scss/*.scss',
       'scss/**/*.scss',
-      'docs/scss/docs.scss',
-      'docs/scss/**/*.scss'
+      'site/scss/style.scss',
+      'site/scss/**/*.scss'
     ]
   };
   

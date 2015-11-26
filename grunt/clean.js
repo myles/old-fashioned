@@ -1,7 +1,7 @@
 module.exports = function (grunt) {
   var config = {
     dist: ['./dist/'],
-    docs_dist: ['./docs/dist/']
+    site_dist: ['./site/dist/']
   };
   
   grunt.config.set('clean', config);

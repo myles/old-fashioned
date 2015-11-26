@@ -16,6 +16,6 @@
 
     $ grunt build
 
-## Build the Documentation
+## Build the Web Site
 
-	$ grunt docs
+	$ grunt site
