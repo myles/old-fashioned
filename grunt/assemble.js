@@ -14,17 +14,23 @@ module.exports = function (grunt) {
       ]
     },
     pages: {
-      expand: true,
-      cwd: 'site/pages',
-      src: ['*.hbs'],
-      dest: 'site/dist/'
+      files: [{
+        expand: true,
+        cwd: 'site/pages',
+        src: ['*.hbs'],
+        dest: 'site/dist/'
+      }]
     },
     docs: {
-      expand: true,
-      engine: 'handlebars',
-      cwd: 'docs',
-      src: ['*.md'],
-      dest: 'site/dist/docs/'
+      options: {
+        layout: 'markdown.hbs'
+      },
+      files: [{
+        expand: true,
+        cwd: 'docs',
+        src: ['*.md'],
+        dest: 'site/dist/docs/'
+      }]
     }
   };
   
