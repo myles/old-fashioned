@@ -18,6 +18,12 @@ module.exports = function (grunt) {
       cwd: 'site/pages',
       src: ['*.hbs'],
       dest: 'site/dist/'
+    },
+    docs: {
+      expand: true,
+      cwd: 'docs',
+      src: ['*.md'],
+      dest: 'site/dist/docs/'
     }
   };
   
