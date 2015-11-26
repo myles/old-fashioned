@@ -5,6 +5,7 @@ module.exports = function (grunt) {
   
   grunt.registerTask('site', [
     'sass:site',
+    'postcss:site',
     'assemble'
   ]);
   
@@ -30,7 +31,7 @@ module.exports = function (grunt) {
   grunt.registerTask('build', [
     'clean:dist',
     'sass:core',
-    'postcss',
+    'postcss:dist',
     'cssmin'
   ]);
 };

@@ -8,6 +8,9 @@ module.exports = function (grunt) {
     },
     dist: {
       src: 'dist/*.css'
+    },
+    site: {
+      src: 'site/dist/assets/style.css'
     }
   };
   
