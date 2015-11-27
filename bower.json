@@ -22,7 +22,7 @@
     "type": "git",
     "url": "https://github.com/myles/old-fashioned.git"
   },
-  "devDependencies": {
+  "dependencies": {
     "bourbon": "~4.2.6",
     "neat": "~1.7.2",
     "bitters": "~1.1.0",
