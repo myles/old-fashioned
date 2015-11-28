@@ -2,7 +2,7 @@ body {
   margin: 0;
 }
 
-.container {
+%container {
   @include margin(null auto null auto);
 
   @each $breakpoint, $container-max-width in $container-max-widths {
@@ -12,20 +12,6 @@ body {
   }
 }
 
-.row {
+%row {
   @include outer-container;
-}
-
-@each $breakpoint, $size in $grid-breakpoints {
-  @include media-breakpoint-up($breakpoint) {
-    @for $i from 1 through $grid-columns {
-      .col-#{$breakpoint}-#{$i} {
-        @include span-columns($i);
-      }
-
-      .col-shift-#{$breakpoint}-#{$i} {
-        @include shift($i);
-      }
-    }
-  }
 }

@@ -17,7 +17,7 @@ module.exports = function (grunt) {
     core: {
       options: options,
       files: {
-        'dist/old-fashioned.css': 'scss/old-fashioned.scss'
+        'dist/old-fashioned.css': 'scss/old-fashioned-full.scss'
       }
     },
     site: {

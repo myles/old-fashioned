@@ -5,7 +5,7 @@
 
 // scss-lint:disable NestingDepth, SelectorDepth
 
-.navigation {
+%navigation {
   background-color: $navigation-background;
   border-bottom: 1px solid darken($navigation-background, 10);
   margin-bottom: 1rem;
