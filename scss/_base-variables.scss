@@ -34,8 +34,10 @@ $gray-light: lighten($gray, 20);
 $gray-lighter: lighten($gray, 40);
 $gray-lightest: lighten($gray, 60);
 
-// Secondary Colours
+// Primary Colour
 $primary-color: $cerulean !default;
+
+// Secondary Colours
 $sucess-color: $bitter-lemon !default;
 $warning-color: $fire-bush !default;
 $danger-color: $wild-watermelon !default;
@@ -236,3 +238,15 @@ $table-bg-hover: #f5f5f5 !default;
 $table-bg-active: $table-bg-hover !default;
 
 $table-border-color: $gray-lighter !default;
+
+// Breadcrumb
+$breadcrumb-border-color: $gray-lighter !default;
+$breadcrumb-border: 1px solid $breadcrumb-border-color;
+$breadcrumb-height: $spacer * 1.5;
+$breadcrumb-arrow-color: $breadcrumb-border-color;
+$breadcrumb-background: $white;
+$breadcrumb-inactive-hover-color: $breadcrumb-background;
+$breadcrumb-color: $gray;
+$breadcrumb-color-hover: $primary-color;
+$breadcrumb-color-active: $breadcrumb-color;
+$breadcrumb-border-radius: 3px;

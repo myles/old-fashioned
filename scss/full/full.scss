@@ -1,6 +1,9 @@
+@import 'type'; // Always first
+@import 'layout'; // Always second
+
 @import 'backgrounds';
-@import 'layout';
+@import 'breadcrumbs';
 @import 'navigation';
 @import 'page';
-@import 'syntax-highlighting';
-@import 'type';
+
+@import 'syntax-highlighting'; // Always last

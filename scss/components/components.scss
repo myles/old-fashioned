@@ -1,8 +1,8 @@
-@import 'reboot';
+@import 'reboot'; // Always first
+
+@import 'breadcrumbs';
 @import 'layout';
-@import 'type';
-
-@import 'page';
 @import 'navigation';
+@import 'page';
 @import 'syntax-highlighting';
-
+@import 'type';
