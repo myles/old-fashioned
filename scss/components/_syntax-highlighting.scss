@@ -1,5 +1,3 @@
-// scss-lint:disable ColorVariable, TrailingWhitespace
-
 %highlight {
   $highlight-background: #fff !default;
 
@@ -165,174 +163,207 @@
 
   .kp { @include type-styles($highlight-keyword-pseudo); }
 
-  .kr {
-    // Keyword.Reserved
-    font-weight: bold;
-  }
+  $highlight-keyword-reserved: (
+    font-weight: bold
+  ) !default;
 
-  .kt {
-    // Keyword.Type
-    color: #458;
-    font-weight: bold;
-  }
+  .kr { @include type-styles($highlight-keyword-reserved); }
 
-  .m {
-    // Literal.Number
-    color: #099;
-  }
+  $highlight-keyword-type: (
+    color: #458,
+    font-weight: bold
+  ) !default;
 
-  .s {
-    // Literal.String
-    color: #d14;
-  }
+  .kt { @include type-styles($highlight-keyword-type); }
 
-  .na {
-    // Name.Attribute
-    color: #008080;
-  }
+  $highlight-literal-number: (
+    color: #099
+  ) !default;
 
-  .nb {
-    // Name.Builtin
-    color: #0086b3;
-  }
+  .m { @include type-styles($highlight-literal-number); }
 
-  .nc {
-    // Name.Class
-    color: #458;
-    font-weight: bold;
-  }
+  $highlight-literal-string: (
+    color: #d14
+  ) !default;
 
-  .no {
-    // Name.Constant
-    color: #008080;
-  }
+  .s { @include type-styles($highlight-literal-string); }
 
-  .ni {
-    // Name.Entity
-    color: #800080;
-  }
+  $highlight-name-attribute: (
+    color: #008080
+  ) !default;
 
-  .ne {
-    // Name.Exception
-    color: #900;
-    font-weight: bold;
-  }
+  .na { @include type-styles($highlight-name-attribute); }
 
-  .nf {
-    // Name.Function
-    color: #900;
-    font-weight: bold;
-  }
+  $highlight-name-builtin: (
+    color: #0086b3
+  ) !default;
 
-  .nn {
-    // Name.Namespace
-    color: #555;
-  }
+  .nb { @include type-styles($highlight-name-builtin); }
 
-  .nt {
-    // Name.Tag
-    color: #000080;
-  }
+  $highlight-name-class: (
+    color: #458,
+    font-weight: bold
+  ) !default;
 
-  .nv {
-    // Name.Variable
-    color: #008080;
-  }
+  .nc { @include type-styles($highlight-name-class); }
 
-  // Operator.Word
-  .ow {
-    font-weight: bold;
-  }
+  $highlight-name-constant: (
+    color: #008080
+  ) !default;
 
-  .w {
-    // Text.Whitespace
-    color: #bbb;
-  }
+  .no { @include type-styles($highlight-name-constant); }
 
-  .mf {
-    // Literal.Number.Float 
-    color: #099;
-  }
+  $highlight-name-entity: (
+    color: #800080
+  ) !default;
 
-  .mh {
-    // Literal.Number.Hex 
-    color: #099;
-  }
+  .ni { @include type-styles($highlight-name-entity); }
 
-  .mi {
-    // Literal.Number.Integer 
-    color: #099;
-  }
+  $highlight-name-exception: (
+    color: #900,
+    font-weight: bold
+  );
 
-  .mo {
-    // Literal.Number.Oct 
-    color: #099;
-  }
+  .ne { @include type-styles($highlight-name-exception); }
 
-  .sb {
-    // Literal.String.Backtick 
-    color: #d14;
-  }
+  $highlight-name-function: (
+    color: #900,
+    font-weight: bold
+  ) !default;
 
-  .sc {
-    // Literal.String.Char 
-    color: #d14;
-  }
+  .nf { @include type-styles($highlight-name-function); }
 
-  .sd {
-    // Literal.String.Doc 
-    color: #d14;
-  }
+  $highlight-name-namespace: (
+    color: #555
+  ) !default;
 
-  .s2 {
-    // Literal.String.Double 
-    color: #d14;
-  }
+  .nn { @include type-styles($highlight-name-namespace); }
 
-  .se {
-    // Literal.String.Escape 
-    color: #d14;
-  }
+  $highlight-name-tag: (
+    color: #000080
+  ) !default;
 
-  .sh {
-    // Literal.String.Heredoc 
-    color: #d14;
-  }
+  .nt { @include type-styles($highlight-name-tag); }
 
-  .si {
-    // Literal.String.Interpol 
-    color: #d14;
-  }
+  $highlihgt-name-variable: (
+    color: #008080
+  ) !default;
 
-  .sx {
-    // Literal.String.Other 
-    color: #d14;
-  }
+  .nv { @include type-styles($highlihgt-name-variable); }
 
-  .sr {
-    // Literal.String.Regex
-    color: #009926;
-  }
+  $highlight-operator-word: (
+    font-weight: bold
+  ) !default;
 
-  .s1 {
-    // Literal.String.Single
-    color: #d14;
-  }
+  .ow { @include type-styles($highlight-operator-word); }
 
-  .ss {
-    // Literal.String.Symbol
-    color: #990073;
-  }
+  $highlight-text-whitespace: (
+    color: #bbb
+  ) !default;
 
-  .bp {
-    // Name.Builtin.Pseudo
-    color: #999;
-  }
+  .w { @include type-styles($highlight-text-whitespace); }
 
-  .vc {
-    // Name.Variable.Class
-    color: #008080;
-  }
+  $highlight-literal-number-float: (
+    color: #099
+  ) !default;
+
+  .mf { @include type-styles($highlight-literal-number-float); }
+
+  $highlight-literal-number-hex: (
+    color: #099
+  ) !default;
+
+  .mh { @include type-styles($highlight-literal-number-hex); }
+
+  $highlight-literal-number-integer: (
+    color: #099
+  ) !default;
+
+  .mi { @include type-styles($highlight-literal-number-integer); }
+
+  $highlight-liternal-number-oct: (
+    color: #099
+  ) !default;
+
+  .mo { @include type-styles($highlight-liternal-number-oct); }
+
+  $highlight-literal-string-backtick: (
+    color: #d14
+  ) !default;
+
+  .sb { @include type-styles($highlight-literal-string-backtick); }
+
+  $highlight-literal-string-char: (
+    color: #d14
+  ) !default;
+
+  .sc { @include type-styles($highlight-literal-string-char); }
+
+  $highlight-literal-string-doc: (
+    color: #d14
+  ) !default;
+
+  .sd { @include type-styles($highlight-literal-string-doc); }
+
+  $highlight-literal-string-double: (
+    color: #d14
+  ) !default;
+
+  .s2 { @include type-styles($highlight-literal-string-double); }
+
+  $highlight-literal-string-escape: (
+    color: #d14
+  ) !default;
+
+  .se { @include type-styles($highlight-literal-string-escape); }
+
+  $highlight-literal-string-heredoc: (
+    color: #d14
+  ) !default;
+
+  .sh { @include type-styles($highlight-literal-string-heredoc); }
+
+  $highlight-literal-string-interpol: (
+    color: #d14
+  ) !default;
+
+  .si { @include type-styles($highlight-literal-string-interpol); }
+
+  $highlight-literal-string-other: (
+    color: #d14
+  ) !default;
+
+  .sx { @include type-styles($highlight-literal-string-other); }
+
+  $highlight-literal-string-regex: (
+    color: #009926
+  ) !default;
+
+  .sr { @include type-styles($highlight-literal-string-regex); }
+
+  $highlight-literal-string-single: (
+    color: #d14
+  ) !default;
+
+  .s1 { @include type-styles($highlight-literal-string-single); }
+
+  $highlight-string-symbol: (
+    color: #990073
+  ) !default;
+
+  .ss { @include type-styles($highlight-string-symbol); }
+
+  $highlight-builtin-pseudo: (
+    color: #999
+  ) !default;
+
+  .bp { @include type-styles($highlight-builtin-pseudo); }
+
+  $highlight-name-variable-class: (
+    color: #008080
+  ) !default;
+
+  .vc { @include type-styles($highlight-name-variable-class); }
 
   $highlight-name-variable-global: (
     color: #008080
