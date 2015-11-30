@@ -250,3 +250,10 @@ $breadcrumb-color: $gray;
 $breadcrumb-color-hover: $primary-color;
 $breadcrumb-color-active: $breadcrumb-color;
 $breadcrumb-border-radius: 3px;
+
+// Pagination
+$pagination-border-color: #dcdcdc;
+$pagination-border: 1px solid $pagination-border-color;
+$pagination-background: lighten($pagination-border-color, 10);
+$pagination-hover-background: lighten($pagination-background, 5);
+$pagination-color: #444;
