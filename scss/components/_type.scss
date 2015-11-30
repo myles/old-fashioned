@@ -81,7 +81,7 @@
 // --------
 
 %small {
-  font-size: 80%;
+  font-size: ms(-2);
   font-weight: normal;
 }
 
@@ -121,7 +121,7 @@
 // ----
 
 %initiamlsm {
-  font-size: 90%;
+  font-size: ms(-1);
   text-transform: uppercase;
 }
 
@@ -142,7 +142,7 @@
   footer {
     color: blockquote-small-color;
     display: block;
-    font-size: 80%;
+    font-size: ms(-2);
     line-height: $line-height;
 
     &::before {
