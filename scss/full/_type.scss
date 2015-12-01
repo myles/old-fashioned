@@ -6,32 +6,32 @@
 
 h1,
 .h1 {
-  @extend %h1;
+  @extend %heading-1;
 }
 
 h2,
 .h2 {
-  @extend %h2;
+  @extend %heading-2;
 }
 
 h3,
 .h3 {
-  @extend %h3;
+  @extend %heading-3;
 }
 
 h4,
 .h4 {
-  @extend %h4;
+  @extend %heading-4;
 }
 
 h5,
 .h5 {
-  @extend %h5;
+  @extend %heading-5;
 }
 
 h6,
 .h6 {
-  @extend %h6;
+  @extend %heading-6;
 }
 
 .lead {
