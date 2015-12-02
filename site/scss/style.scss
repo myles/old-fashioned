@@ -7,7 +7,7 @@ header {
   @include padding(1em null);
   
   position: fixed;
-  overflow: auto;
+  overflow: auto !important;
 }
 
 article {
