@@ -2,3 +2,18 @@
 
 @import 'components/colours';
 @import 'components/typography';
+
+header {
+  @include padding(1em null);
+  
+  position: fixed;
+  overflow: auto;
+}
+
+article {
+  @include padding(.5em 1em);
+}
+
+section {
+  @include padding(.5em 1em);
+}
