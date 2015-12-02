@@ -10,6 +10,11 @@
     "font-family": "font-family-serif"
   },
   {
+    "title": "Slab",
+    "slug": "slab",
+    "font-family": "font-family-slab"
+  },
+  {
     "title": "Monospace",
     "slug": "monospace",
     "font-family": "font-family-monospace"

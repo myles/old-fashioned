@@ -133,7 +133,8 @@ $max-width: 1200px;
 
 // Font Family
 $font-family-sans-serif: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
-$font-family-serif: "Volkorn", Georgia, "Times New Roman", Times, serif !default;
+$font-family-serif: "Vollkorn", Georgia, "Times New Roman", Times, serif !default;
+$font-family-slab: "Alfa Slab One", $font-family-serif;
 $font-family-monospace: "Hack", Menlo, Monaco, Consolas, "Courier New", monospace !default;
 $font-family-base: $font-family-sans-serif !default;
 
@@ -187,6 +188,7 @@ $text-muted: $gray-light !default;
 $abbr-border-color: $gray-light !default;
 
 $blockquote-small-color: $gray-light !default;
+$blockquote-font-family: $font-family-base;
 $blockquote-font-size: ($font-size-base * 1.25) !default;
 $blockquote-border-color: $gray-lighter !default;
 
