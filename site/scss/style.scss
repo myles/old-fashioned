@@ -4,10 +4,10 @@
 @import 'components/typography';
 
 header {
-  @include padding(1em null);
-  
+  @include padding(1em .5em);
+
+  overflow: auto;
   position: fixed;
-  overflow: auto !important;
 }
 
 article {
@@ -16,4 +16,10 @@ article {
 
 section {
   @include padding(.5em 1em);
+  @include border-top-radius(5px);
+  @include border-right-radius(5px);
+  @include border-bottom-radius(5px);
+  @include border-left-radius(5px);
+
+  border: 1px solid $black;
 }
