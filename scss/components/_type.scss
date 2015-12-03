@@ -44,8 +44,8 @@
   font-weight: $lead-font-weight;
 }
 
-// Type Display Classes
-// --------------------
+// Display
+// -------
 
 %display-1 {
   font-size: $display1-size;
@@ -147,8 +147,18 @@
 }
 
 %mark {
-  background-color: $warning-color;
+  background-color: $highlight-yellow;
   padding: .2em;
+
+  @each $color, $var in ('yellow': $highlight-yellow,
+                         'blue': $highlight-blue,
+                         'pink': $highlight-pink,
+                         'green': $highlight-green,
+                         'orange': $highlight-orange) {
+    &.#{$color} {
+      background-color: #{$var};
+    }
+  }
 }
 
 // Typefaces
