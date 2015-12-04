@@ -35,7 +35,7 @@ $white: #fff;
 $black: #000;
 
 // Gary Colours
-$gray-dark: darken($gray, 10);
+$gray-dark: darken($gray, 20);
 $gray-light: lighten($gray, 20);
 $gray-lighter: lighten($gray, 40);
 $gray-lightest: lighten($gray, 60);
@@ -55,6 +55,15 @@ $facebook-color: #3c569a;
 $google-plus-color: #df4a32;
 $instagram-color: #211f20;
 $rss-color: #f16522;
+
+// Transparent Colours
+$transparent-black-25: rgba(0, 0, 0, .25);
+$transparent-black-50: rgba(0, 0, 0, .50);
+$transparent-black-75: rgba(0, 0, 0, .75);
+
+$transparent-white-25: rgba(255, 255, 255, .25);
+$transparent-white-50: rgba(255, 255, 255, .50);
+$transparent-white-75: rgba(255, 255, 255, .75);
 
 $colors: ('cape-code', $cape-code),
          ('wild-watermelon', $wild-watermelon),
@@ -265,3 +274,15 @@ $pagination-border: 1px solid $pagination-border-color;
 $pagination-background: lighten($pagination-border-color, 10);
 $pagination-hover-background: lighten($pagination-background, 5);
 $pagination-color: #444;
+
+// Code
+$code-color: #bd4147;
+$code-bg: #f7f7f9;
+
+$kbd-color: $white;
+$kbd-bg: $gray-dark;
+
+$pre-bg: #f7f7f9;
+$pre-color: $gray-dark;
+$pre-border-color: #ccc;
+$pre-scrollable-max-height: 340px;
