@@ -50,7 +50,7 @@
     text-decoration: none;
     text-transform: uppercase;
 
-    @include media-breakpoint-up($navigation-horizontal-bar-mode) {
+    @include media-breakpoint-up('sm') {
       display: none;
     }
 
@@ -67,7 +67,7 @@
     min-height: $navigation-height;
     z-index: 9999999;
 
-    @include media-breakpoint-up($navigation-horizontal-bar-mode) {
+    @include media-breakpoint-up('sm') {
       float: left;
     }
   }
@@ -81,7 +81,7 @@
     width: 100%;
     z-index: 9999;
 
-    @include media-breakpoint-up($navigation-horizontal-bar-mode) {
+    @include media-breakpoint-up('sm') {
       display: inline;
       margin: 0;
       padding: 0;
@@ -104,7 +104,7 @@
     width: 100%;
     z-index: 9999;
 
-    @include media-breakpoint-up($navigation-horizontal-bar-mode) {
+    @include media-breakpoint-up('sm') {
       background: transparent;
       display: inline;
       line-height: $navigation-height;
@@ -117,7 +117,7 @@
       display: inline-block;
       text-decoration: none;
 
-      @include media-breakpoint-up($navigation-horizontal-bar-mode) {
+      @include media-breakpoint-up('sm') {
         padding-right: 1em;
       }
 
@@ -139,7 +139,7 @@
     overflow: visible;
     padding-right: 0;
 
-    @include media-breakpoint-up($navigation-horizontal-bar-mode) {
+    @include media-breakpoint-up('sm') {
       padding-right: .8em;
       position: relative;
     }
@@ -147,7 +147,7 @@
     &.nav-link {
       padding-right: 0;
 
-      @include media-breakpoint-up($navigation-horizontal-bar-mode) {
+      @include media-breakpoint-up('sm') {
         padding-right: $navigation-submenu-padding;
       }
 
@@ -179,7 +179,7 @@
       padding-right: 1.6em;
       position: relative;
 
-      @include media-breakpoint-up($navigation-horizontal-bar-mode) {
+      @include media-breakpoint-up('sm') {
         margin-right: $navigation-submenu-padding;
       }
 
@@ -201,14 +201,14 @@
     display: none;
     padding-left: 0;
 
-    @include media-breakpoint-up($navigation-horizontal-bar-mode) {
+    @include media-breakpoint-up('sm') {
       left: -$navigation-submenu-padding;
       position: absolute;
       top: 1.5em;
     }
 
     .submenu {
-      @include media-breakpoint-up($navigation-horizontal-bar-mode) {
+      @include media-breakpoint-up('sm') {
         left: $navigation-submenu-width - .2em;
         top: 0;
       }
@@ -218,7 +218,7 @@
       display: block;
       padding-right: 0;
 
-      @include media-breakpoint-up($navigation-horizontal-bar-mode) {
+      @include media-breakpoint-up('sm') {
         line-height: $navigation-height / 1.3;
 
         &:first-child > a {
@@ -239,7 +239,7 @@
         text-align: right;
         width: 100%;
 
-        @include media-breakpoint-up($navigation-horizontal-bar-mode) {
+        @include media-breakpoint-up('sm') {
           background-color: $navigation-background;
           padding-left: $navigation-submenu-padding;
           text-align: left;
@@ -257,7 +257,7 @@
     display: block;
     height: $navigation-height;
 
-    @include media-breakpoint-up($navigation-horizontal-bar-mode) {
+    @include media-breakpoint-up('sm') {
       background: transparent;
       clear: none;
       float: right;
@@ -275,7 +275,7 @@
     padding: .85em .85em .7em .6em;
     width: 60%;
 
-    @include media-breakpoint-up($navigation-horizontal-bar-mode) {
+    @include media-breakpoint-up('sm') {
       display: inline-block;
       position: relative;
       width: 16em;
@@ -297,7 +297,7 @@
       padding: .5em .8em;
       width: 100%;
 
-      @include media-breakpoint-up($navigation-horizontal-bar-mode) {
+      @include media-breakpoint-up('sm') {
         box-sizing: border-box;
         display: block;
         width: 100%;

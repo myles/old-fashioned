@@ -245,6 +245,12 @@ $navigation-submenu-padding: 1em !default;
 $navigation-submenu-width: 12em !default;
 $navigation-horizontal-bar-mode: 'sm' !default;
 
+// Footer
+$footer-background: $navigation-background !default;
+$footer-padding: $navigation-padding !default;
+$footer-link-color: $navigation-color !default;
+$footer-disclaimer-color: $navigation-color !default;
+
 // Tables
 $table-cell-padding: .75rem !default;
 $table-sm-cell-padding: .3rem !default;
