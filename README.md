@@ -4,18 +4,8 @@
 
 ## Development
 
-	$ bundle install --path vendor/bundle
-	$ npm install
-	$ bower install
-
-## Testing
-
-	$ grunt test
+	$ npm start
 
 ## Build
 
-    $ grunt build
-
-## Build the Web Site
-
-	$ grunt site
+    $ npm run build
