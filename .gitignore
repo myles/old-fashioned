@@ -17,5 +17,6 @@
 /.grunt/
 
 // Project stuff
-/site/dist/
 /dist/
+/.publish/
+

@@ -4,6 +4,9 @@ before_script:
 - npm install -g bower grunt-cli
 script:
 - npm test
+after_sucess:
+- npm run build
+- gulp deploy
 before_deploy:
 - npm run build
 env:
