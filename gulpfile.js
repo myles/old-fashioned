@@ -110,6 +110,11 @@ gulp.task('favicon', function () {
 		.pipe(gulp.dest(config.dest));
 });
 
+gulp.task('cname', function () {
+	return gulp.src('./src/CNAME')
+	.pipe(gulp.dest(config.dest))
+});
+
 
 // assemble
 gulp.task('assemble', function (done) {
@@ -182,6 +187,7 @@ gulp.task('default', ['clean'], function () {
 	var tasks = [
 		'styles',
 		'scripts',
+		'cname',
 		'images',
 		'assemble'
 	];
