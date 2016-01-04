@@ -16,6 +16,13 @@
 				{{#each items}}
 				<li>
 					<a href="{{@../key}}.html#{{@key}}">{{name}}</a>
+					<ul>
+						{{#each items}}
+						<li>
+							<a href="{{@../../key}}.html#{{@key}}">{{name}}</a>
+						</li>
+						{{/each}}
+					</ul>
 				</li>
 				{{/each}}
 			</ul>

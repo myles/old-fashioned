@@ -1,12 +1,16 @@
 {{> navigation}}
 
-<div class="container">
-	{{> page.page-header}}
+<div class="main">
+	<div class="container">
+		{{> breadcrumbs}}
+	
+		{{> page.page-header}}
 
-	{{> type.paragraph}}
+		{{> type.headings}}
 
-	<div>
-		{#> form#}
+		<div>
+			{{> form}}
+		</div>
 	</div>
 </div>
 
