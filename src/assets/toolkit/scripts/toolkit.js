@@ -8,8 +8,8 @@
 'use strict';
 
 $(document).ready(function() {
-	var menuToggle = document.getElementById('js-mobile-menu'),
-		navigationMenu = document.getElementById('js-navigation-menu');
+	var menuToggle = $('#js-mobile-menu'),
+		navigationMenu = $('#js-navigation-menu');
 	
 	navigationMenu.removeClass("show");
 	
@@ -22,4 +22,8 @@ $(document).ready(function() {
 			}
 		});
 	});
+	
+	// Inject SVG files.
+	var svgsToInject = document.querySelectorAll('img.svg-injector');
+	SVGInjector(svgsToInject);
 });
