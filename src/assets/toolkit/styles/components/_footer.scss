@@ -74,6 +74,15 @@
 		max-width: 35em;
 		text-align: center;
 		
+		a {
+			color: $footer-link-color;
+		
+			&:focus,
+			&:hover {
+				color: transparentize($footer-link-color, 0);
+			}
+		}
+		
 		.heart {
 			@include size(1.5em);
 			vertical-align: middle;
