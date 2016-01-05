@@ -75,13 +75,13 @@
 		text-align: center;
 		
 		.heart {
-		  @include size(1.5em);
-		  vertical-align: middle;
-		  
-		  * {
-			  fill: $footer-heart-color;;
-			  stroke: $footer-heart-color;
-		  }
+			@include size(1.5em);
+			vertical-align: middle;
+			
+			* {
+				fill: $footer-heart-color;
+				stroke: $footer-heart-color;
+			}
 		}
 	}
 }
