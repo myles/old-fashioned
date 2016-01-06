@@ -6,7 +6,7 @@ script:
 - npm test
 after_sucess:
 - npm run build
-- gulp deploy
+- gulp cname deploy
 before_deploy:
 - npm run build
 env:
