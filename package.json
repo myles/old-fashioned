@@ -8,7 +8,7 @@
     "prestart": "npm install && bower install",
     "build": "npm install && bower install && gulp",
     "start": "gulp --dev",
-    "test": "npm run build"
+    "test": "gulp lint"
   },
   "repository": {
     "type": "git",
@@ -36,11 +36,14 @@
     "gulp-gh-pages": "^0.5.4",
     "gulp-if": "^1.2.5",
     "gulp-imagemin": "^2.2.1",
+    "gulp-jshint": "^2.0.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.0.0",
+    "gulp-scss-lint": "^0.3.8",
     "gulp-sourcemaps": "^1.5.2",
     "gulp-util": "^3.0.4",
     "imports-loader": "^0.6.3",
+    "jshint": "^2.9.1-rc2",
     "run-sequence": "^1.0.2",
     "script-loader": "^0.6.1",
     "webpack": "^1.8.11"

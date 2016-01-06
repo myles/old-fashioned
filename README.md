@@ -24,4 +24,4 @@ Install the Ruby dependencies:
 
 ### Testing
 
-	$ npm run test
+	$ npm test

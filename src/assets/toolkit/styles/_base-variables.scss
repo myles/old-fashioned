@@ -249,8 +249,10 @@ $navigation-horizontal-bar-mode: 'sm' !default;
 $footer-background: $navigation-background !default;
 $footer-padding: $navigation-padding !default;
 $footer-link-color: $navigation-color !default;
+$footer-link-color-hover: transparentize($footer-link-color, 0) !default;
 $footer-disclaimer-color: $navigation-color !default;
 $footer-heart-color: #da3a35 !default;
+$footer-break-size: 'sm' !default;
 
 // Tables
 $table-cell-padding: .75rem !default;

@@ -16,7 +16,9 @@ var assemble = require('fabricator-assemble'),
     sass = require('gulp-sass'),
     sourcemaps = require('gulp-sourcemaps'),
     webpack = require('webpack'),
-    ghPages = require('gulp-gh-pages');
+    ghPages = require('gulp-gh-pages'),
+    jshint = require('gulp-jshint'),
+    scsslint = require('gulp-scss-lint');
 
 
 // configuration
@@ -37,7 +39,11 @@ var config = {
             ]
         },
         images: 'src/assets/toolkit/images/**/*',
-        views: 'src/toolkit/views/*.html'
+        views: 'src/toolkit/views/*.html',
+        toolkit: {
+            scripts: './src/assets/toolkit/scripts/**/*.js',
+            styles: './src/assets/toolkit/styles/**/*.scss'
+        }
     },
     dest: 'dist',
     bower: [
@@ -87,6 +93,13 @@ gulp.task('styles:toolkit', function () {
 gulp.task('styles', ['styles:fabricator', 'styles:toolkit']);
 
 
+// scss-lint
+gulp.task('scss-lint', function () {
+    return gulp.src(config.src.toolkit.styles)
+        .pipe(scsslint());
+});
+
+
 // scripts
 gulp.task('scripts', function (done) {
     webpackCompiler.run(function (error, result) {
@@ -101,6 +114,14 @@ gulp.task('scripts', function (done) {
         }
         done();
     });
+});
+
+
+// js-lint
+gulp.task('js-lint', function () {
+    return gulp.src(config.src.toolkit.scripts)
+        .pipe(jshint())
+        .pipe(jshint.reporter('default'));
 });
 
 
@@ -119,7 +140,8 @@ gulp.task('favicon', function () {
 
 // bower copy
 gulp.task('bower', function () {
-    for (var i = 0; i < config.bower.length; i++) {
+    var i;
+    for (i = 0; i < config.bower.length; i += 1) {
         gulp.src(config.bower[i])
             .pipe(gulp.dest(config.dest + '/assets/libs'));
     }
@@ -139,6 +161,13 @@ gulp.task('assemble', function (done) {
         logErrors: config.dev
     });
     done();
+});
+
+
+// deploy
+gulp.task('deploy', function () {
+    return gulp.src('./dist/**/*')
+        .pipe(ghPages());
 });
 
 
@@ -190,10 +219,14 @@ gulp.task('serve', function () {
 });
 
 
-// deploy
-gulp.task('deploy', function () {
-    return gulp.src('./dist/**/*')
-        .pipe(ghPages());
+// lint task
+gulp.task('lint', function () {
+    var tasks = [
+        'js-lint',
+        'scss-lint'
+    ];
+
+    runSequence(tasks);
 });
 
 
