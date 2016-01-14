@@ -1,0 +1,26 @@
+{
+    "version": "0.1.0",
+    "command": "gulp",
+    "isShellCommand": true,
+    "args": [
+        "--no-color"
+    ],
+    "tasks": [
+      {
+        "taskName": "default",
+        "isBuildCommand": true,
+        "problemMatcher": "$msCompile"
+      },
+      {
+        "taskName": "default",
+        "args": [
+          "--dev"
+        ],
+        "isWatching": true
+      },
+      {
+        "taskName": "lint",
+        "isTestCommand": true 
+      }
+    ]
+}

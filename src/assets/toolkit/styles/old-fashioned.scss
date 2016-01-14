@@ -3,7 +3,7 @@
 // MIT License
 // https://github.com/myles/old-fashioned/blob/master/LICENSE
 
-@import 'modular-scale';
+@import 'modular-scale/stylesheets/modular-scale';
 
 // Core variables and mixins
 @import 'base-variables';
@@ -11,8 +11,9 @@
 @import 'functions/functions';
 
 // Dependencies
-@import 'bourbon';
-@import 'neat';
+@import 'bourbon/app/assets/stylesheets/bourbon';
+@import 'neat/app/assets/stylesheets/neat';
+@import 'animatewithsass/properties';
 
 // Core CSS
 @import 'utilities/utilities';

@@ -1,0 +1,15 @@
+{
+  "files.exclude": {
+    "**/.git": true,
+    "**/.DS_Store": true,
+    "**/.bundle": true,
+    "**/.grunt": true,
+    "**/.publish": true,
+    "**/.sass-cache": true,
+    "**/bower_components": true,
+    "**/node_modules": true,
+    "**/vendor": true,
+    "**/dist": true,
+    "**/Gemfile.lock": true
+  }
+}

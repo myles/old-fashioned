@@ -33,9 +33,7 @@ var config = {
             fabricator: 'src/assets/fabricator/styles/fabricator.scss',
             toolkit: 'src/assets/toolkit/styles/toolkit.scss',
             include_paths: [
-                './bower_components/bourbon/app/assets/stylesheets/',
-                './bower_components/neat/app/assets/stylesheets/',
-                './bower_components/modular-scale/stylesheets/'
+                './bower_components/'
             ]
         },
         images: 'src/assets/toolkit/images/**/*',
