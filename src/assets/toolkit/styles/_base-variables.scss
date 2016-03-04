@@ -189,7 +189,12 @@ $display4-weight: 300;
 
 $line-height: 24px !default;
 
-$headings-margin-bottom: ($spacer / 2) !default;
+$paragraph-margin-bottom: $line-height !default;
+$paragraph-margin-top: $line-height !default;
+$paragraph-line-height: $line-height !default;
+
+$headings-margin-bottom: $line-height !default;
+$headings-margin-top: $line-height !default;
 $headings-font-family: inherit !default;
 $headings-font-weight: 500 !default;
 $headings-line-height: $line-height*2 !default;

@@ -6,6 +6,7 @@
   font-family: $headings-font-family;
   font-weight: $headings-font-weight;
   line-height: $headings-line-height;
+  margin-top: $headings-margin-top;
   margin-bottom: $headings-margin-bottom;
 }
 
@@ -66,7 +67,9 @@
 // ---------
 
 %paragraph {
-  margin: $line-height 0;
+  line-height: $paragraph-line-height;
+  margin-bottom: $paragraph-margin-top;
+  margin-top: $paragraph-margin-bottom;
 }
 
 %lead {
