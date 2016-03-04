@@ -39,11 +39,6 @@
   font-size: $font-size-h6;
 }
 
-%lead {
-  font-size: $lead-font-size;
-  font-weight: $lead-font-weight;
-}
-
 // Display
 // -------
 
@@ -65,6 +60,18 @@
 %display-4 {
   font-size: $display4-size;
   font-weight: $display4-weight;
+}
+
+// Paragraph
+// ---------
+
+%paragraph {
+  margin: $line-height 0;
+}
+
+%lead {
+  font-size: $lead-font-size;
+  font-weight: $lead-font-weight;
 }
 
 // Horizontal Rules

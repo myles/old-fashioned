@@ -34,10 +34,6 @@ h6,
   @extend %heading-6;
 }
 
-.lead {
-  @extend %lead;
-}
-
 /* Type Display Classes
  * --------------------
  */
@@ -56,6 +52,19 @@ h6,
 
 .display-4 {
   @extend %display-4;
+}
+
+/* Paragraph
+ * ---------
+ */
+
+p,
+.paragraph {
+  @extend %paragraph;
+}
+
+.lead {
+  @extend %lead;
 }
 
 /* Horizontal Rules
