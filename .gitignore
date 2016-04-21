@@ -1,17 +1,6 @@
-.DS_Store
+dist/
 
-// Ruby stuff
-/.bundle/
-/vendor/bundle/
+.sass-cache/
 
-// Node.js stuff
-/node_modules/
-
-// Bower stuff
-/bower_components/
-
-// SASS
-/.sass-cache/
-
-// Grunt
-/.grunt/
+node_modules/
+bower_components/
