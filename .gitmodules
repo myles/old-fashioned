@@ -1,4 +1,0 @@
-[submodule "src/docs"]
-	path = src/docs
-	url = https://github.com/myles/old-fashioned.wiki.git
-	branch = master

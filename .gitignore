@@ -15,8 +15,3 @@
 
 // Grunt
 /.grunt/
-
-// Project stuff
-/dist/
-/.publish/
-
