@@ -1,0 +1,15 @@
+$breadcrumb-height: $spacer * 1.5;
+$breadcrumb-background: $white !default;
+
+$breadcrumb-border-color: $gray-lighter !default;
+$breadcrumb-border-width: 1px !default;
+$breadcrumb-border-style: solid !default;
+$breadcrumb-border: $breadcrumb-border-width $breadcrumb-border-style $breadcrumb-border-color;
+
+$breadcrumb-border-radius: 3px !default;
+
+$breadcrumb-color: $gray !default;
+$breadcrumb-color-hover: $primary-color !default;
+$breadcrumb-color-active: $breadcrumb-color !default;
+$breadcrumb-arrow-color: $breadcrumb-border-color !default;
+$breadcrumb-inactive-hover-color: $breadcrumb-background !default;

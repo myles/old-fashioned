@@ -270,18 +270,6 @@ $table-bg-active: $table-bg-hover !default;
 
 $table-border-color: $gray-lighter !default;
 
-// Breadcrumb
-$breadcrumb-border-color: $gray-lighter !default;
-$breadcrumb-border: 1px solid $breadcrumb-border-color;
-$breadcrumb-height: $spacer * 1.5;
-$breadcrumb-arrow-color: $breadcrumb-border-color;
-$breadcrumb-background: $white;
-$breadcrumb-inactive-hover-color: $breadcrumb-background;
-$breadcrumb-color: $gray;
-$breadcrumb-color-hover: $primary-color;
-$breadcrumb-color-active: $breadcrumb-color;
-$breadcrumb-border-radius: 3px;
-
 // Pagination
 $pagination-border-color: #dcdcdc;
 $pagination-border: 1px solid $pagination-border-color;

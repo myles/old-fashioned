@@ -6,7 +6,6 @@ script:
 - npm test
 after_sucess:
 - npm run build
-- gulp cname deploy
 before_deploy:
 - npm run build
 env:
@@ -23,6 +22,3 @@ deploy:
   skip_cleanup: true
   on:
     repo: myles/old-fashioned
-notifications:
-  slack:
-    secure: Q5nefokLbkl9OnXyOfg4ZFrh3Xmy+zk4HVHYFrNvE2T+MDDPeBGK79xqr+/fOYrzHF64i5rHhwaUl2cPeFWrtoJ5TbmlOvx4SUXinM7rooejZO5cL4RozIo88/JhsTs1K8VY7JisN/uw61zMSQf+2dfhZb887AsaKqHQRmOH/0SMoMCEKrAKOvwAHGad1VKQL8O81vnjFJqlT3skFgDzbf8V2Rg3Gx9mKJMOHCq05s44xNxIonjIO3jrMqQ9LZxPjKsYRcUqw/kQ6t2gtKPRa65X6lfCFbJ7N9A5is42h7K1ZJ/HSVQVMAvR1GhMjJKRiAmgK/3RUic75GJPS8pwQVVXOD3kVz4hzckepmaqyE4sprSO8+9wCa1zSAy5sEf2FXE3QYD7x/Lljc2truL/HPQUvehL8I1OqqAC3W7q2vmoZeS0HlxDY/4q81Sw5EaxoR3r/5h39JGKKxcIRudWfFmFQpFCyxG9Vg90YbKXY0T3O59cNVCUZnZGFEQx+cpybJY69bGP4M5mkOduwYAMqgqBw3/ff8NPlCvz24yUKLVz8++Ve5V0fvA+mDBG6FdpQoxdDoTEWTEUWmHG/cBt1+BxKPTTK/JxBo+10cGl0epKxSHMH4095IyqgGatiIKElFy3w4zWfu68FYf6U473hKVwNegsAjoZ680kkqF2UTA=

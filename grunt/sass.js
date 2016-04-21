@@ -6,7 +6,10 @@ module.exports = function (grunt) {
             options: {
                 bundleExec: true,
                 style: 'expanded',
-                loadPath: ['bower_components/']
+                loadPath: [
+                    'bower_components/',
+                    'src/stylesheets/'
+                ]
             },
             files: {
                 'dist/stylesheets/old-fashioned.css': 'src/stylesheets/' +

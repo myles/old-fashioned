@@ -1,3 +1,7 @@
 .breadcrumb {
   @extend %breadcrumb;
 }
+
+.breadcrumb__item {
+  @extend %breadcrumb__item;
+}
