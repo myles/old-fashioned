@@ -7,7 +7,9 @@ module.exports = function (grunt) {
 
     grunt.registerTask('build', [
         'clean:dist',
-        'sass:dist'
+        'sass:dist',
+        'cssmin:dist',
+        'usebanner:dist'
     ]);
 
     grunt.registerTask('default', ['build']);

@@ -4,6 +4,7 @@ module.exports = function (grunt) {
     var config = {
         dist: {
             options: {
+                bundleExec: true,
                 style: 'expanded',
                 loadPath: ['bower_components/']
             },
