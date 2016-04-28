@@ -1,0 +1,66 @@
+$article-meta-text-color: $gray !default;
+
+.article {
+  @at-root #{&}--columns {
+    @extend %row;
+  }
+}
+
+// Header
+// ======
+.article__header {
+  @at-root #{&}--column {
+    @include span-columns(6);
+    margin-top: 24px;
+  }
+
+  @at-root #{&}--border-top {
+    border-top: .5rem solid $black;
+  }
+
+  @at-root #{&}--border-bottom {
+    border-bottom: 1px solid $black;
+  }
+}
+
+// Title
+// -----
+.article__title {
+  @extend %heading-1;
+
+  @at-root #{&}--size-xl {
+    @extend %display-1;
+  }
+
+  @at-root #{&}---size-lg {
+    @extend %display-2;
+  }
+}
+
+// Subtitle
+// --------
+.article__subtitle {
+  @extend %lead;
+  line-height: $paragraph-line-height;
+}
+
+// Meta
+// ----
+.article__meta {
+  @extend %paragraph;
+  color: $article-meta-text-color;
+}
+
+// Content
+// =======
+.article__content {
+  @at-root #{&}--column {
+    @include span-columns(6);
+  }
+}
+
+// Footer
+// ======
+.article__footer {
+  @extend %lead;
+}

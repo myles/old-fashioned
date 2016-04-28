@@ -6,7 +6,7 @@
 @import 'modular-scale/stylesheets/modular-scale';
 
 // Core variables and mixins
-@import 'base/variables';
+@import 'base_variables';
 @import 'mixins/mixins';
 @import 'functions/functions';
 
@@ -16,4 +16,4 @@
 @import 'animatewithsass/properties';
 
 // Core CSS
-@import 'components/components';
+@import 'plumbing/plumbing';

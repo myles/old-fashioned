@@ -270,13 +270,6 @@ $table-bg-active: $table-bg-hover !default;
 
 $table-border-color: $gray-lighter !default;
 
-// Pagination
-$pagination-border-color: #dcdcdc;
-$pagination-border: 1px solid $pagination-border-color;
-$pagination-background: lighten($pagination-border-color, 10);
-$pagination-hover-background: lighten($pagination-background, 5);
-$pagination-color: #444;
-
 // Code
 $code-color: #bd4147;
 $code-bg: #f7f7f9;

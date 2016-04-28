@@ -1,13 +1,19 @@
 @import 'reboot'; // Always first
 @import 'type'; // Always second
 
+@import 'components/article/style';
+@import 'components/footer/style';
+
+@import 'components/menu';
+
+
 @import 'components/breadcrumbs/style';
 @import 'code';
 @import 'font-families';
-@import 'footer';
+
 @import 'forms';
 @import 'layout';
 @import 'navigation';
 @import 'page';
-@import 'pagination';
+@import 'components/pagination/style';
 @import 'syntax-highlighting';

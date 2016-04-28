@@ -13,7 +13,7 @@ module.exports = function (grunt) {
             },
             files: {
                 'dist/stylesheets/old-fashioned.css': 'src/stylesheets/' +
-                                                      'porcelain/prcelain.scss'
+                                                      'porcelain/porcelain.scss'
             }
         }
     };

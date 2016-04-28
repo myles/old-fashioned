@@ -6,5 +6,5 @@
 
 @each $name, $hex in $colors {
   /* Colour #{$name}. */
-  @include bg-variant('.bg-#{$name}, %bg-#{$name}', $hex);
+  @include bg-variant('.background--colour_#{$name}', $hex);
 }
