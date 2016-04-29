@@ -17,11 +17,11 @@ module.exports = function (grunt) {
             src: ['docs/pages/**/*.hbs'],
             dest: 'dist/docs/'
         },
-        components: {
+        porcelain: {
             expand: true,
-            cwd: 'docs/components/',
+            cwd: 'docs/porcelain/',
             src: ['**/*.hbs'],
-            dest: 'dist/docs/components/'
+            dest: 'dist/docs/porcelain/'
         }
     };
 
