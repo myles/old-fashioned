@@ -9,6 +9,20 @@ module.exports = function (grunt) {
                 livereload: true
             }
         },
+        svg: {
+            files: ['src/images/**/*.svg'],
+            tasks: ['svgmin:dist'],
+            options: {
+                livereload: true
+            }
+        },
+        javascript: {
+            files: ['src/javascript/**/*.js'],
+            tasks: ['uglify:dist'],
+            options: {
+                livereload: true
+            }
+        },
         docs: {
             files: ['docs/**/*.hbs'],
             tasks: ['assemble'],

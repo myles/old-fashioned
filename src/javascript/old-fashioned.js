@@ -1,10 +1,3 @@
-/**
- * Old Fashioned 0.0.0
- * Copyright 2015 Myles Braithwaite
- * MIT License
- * https://github.com/myles/old-fashioned/blob/master/LICENSE
- */
-
 /* global $, SVGInjector */
 /* jshint newcap:false */
 
@@ -27,6 +20,6 @@ $(document).ready(function() {
     });
     
     // Inject SVG files.
-    var svgsToInject = document.querySelectorAll('img.svg-injector');
+    var svgsToInject = document.querySelectorAll('.javascript__svg_injector');
     SVGInjector(svgsToInject);
 });

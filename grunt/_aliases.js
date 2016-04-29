@@ -8,6 +8,8 @@ module.exports = function (grunt) {
     grunt.registerTask('develop', [
         'clean:dist',
         'sass:dist',
+        'svgmin:dist',
+        'uglify:dist',
         'assemble',
         'connect',
         'watch'
@@ -17,6 +19,8 @@ module.exports = function (grunt) {
         'clean:dist',
         'sass:dist',
         'cssmin:dist',
+        'svgmin:dist',
+        'uglify:dist',
         'usebanner:dist'
     ]);
 
