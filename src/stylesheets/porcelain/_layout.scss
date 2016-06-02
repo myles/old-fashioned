@@ -2,18 +2,18 @@
   @extend %container;
 }
 
-.row {
+.grid {
   @extend %row;
 }
 
 @each $breakpoint, $size in $grid-breakpoints {
   @include media-breakpoint-up($breakpoint) {
     @for $i from 1 through $grid-columns {
-      .col-#{$breakpoint}-#{$i} {
+      .column__#{$i}--breakpoint-#{$breakpoint} {
         @include span-columns($i);
       }
 
-      .col-shift-#{$breakpoint}-#{$i} {
+      .column__shift-#{$i}--breakpoint-#{$breakpoint} {
         @include shift($i);
       }
     }
