@@ -1,7 +1,0 @@
-dist/
-
-.sass-cache/
-
-node_modules/
-vendor/bundle/
-bower_components/

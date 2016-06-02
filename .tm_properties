@@ -1,2 +1,0 @@
-include = "{$include,.editorconfig,.gitattributes,.gitignore,.jshintrc,.npmignore,.scss-lint.yml,.travis.yml}"
-exclude = "{$exclude,node_modules,bower_components,vendor,dist,Gemfile.lock}"
