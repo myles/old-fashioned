@@ -1,0 +1,2 @@
+exclude = "{$exclude,bower_components,node_modules,public}"
+include = "{$include,.editorconfig}"

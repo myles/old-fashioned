@@ -1,0 +1,80 @@
+// Headings
+// --------
+%headings {
+  margin-bottom: $headings-margin-bottom;
+  margin-top: $headings-margin-top;
+  font-family: $headings-font-family;
+  line-height: $headings-line-height;
+  color: $headings-colour;
+}
+
+// Heading 1
+h1,
+.heading-one {
+  @extend %headings;
+  font-size: $font-size-heading-one;
+}
+
+// Heading 2
+h2,
+.heading-two {
+  @extend %headings;
+  font-size: $font-size-heading-two;
+}
+
+// Heading 3
+h3,
+.heading-three {
+  @extend %headings;
+  font-size: $font-size-heading-three;
+}
+
+// Heading 4
+h4,
+.heading-four {
+  @extend %headings;
+  font-size: $font-size-heading-four;
+}
+
+// Heading 5
+h5,
+.heading-five {
+  @extend %headings;
+  font-size: $font-size-heading-five;
+}
+
+// Heading 6
+h6,
+.heading-six {
+  @extend %headings;
+  font-size: $font-size-heading-six;
+}
+
+// Display
+// -------
+// %displays {}
+
+// Display 1
+.display-one {
+  // @extend %displays;
+  font-size: $font-size-display-one;
+  font-weight: $font-weight-display-one;
+}
+
+.display-two {
+  // @extend %displays;
+  font-size: $font-size-display-two;
+  font-weight: $font-weight-display-two;
+}
+
+.display-three {
+  // @extend %displays;
+  font-size: $font-size-display-three;
+  font-weight: $font-weight-display-three;
+}
+
+.display-four {
+  // @extend %displays;
+  font-size: $font-size-display-four;
+  font-weight: $font-weight-display-four;
+}

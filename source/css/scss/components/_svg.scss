@@ -1,0 +1,5 @@
+@each $name, $colour in $map-colours {
+  .svg-#{$name} {
+    fill: $colour;
+  }
+}

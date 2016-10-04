@@ -1,0 +1,3 @@
+@each $name, $colour in $map-colours {
+  @include text-color-variant('.text-#{$name}', $colour);
+}

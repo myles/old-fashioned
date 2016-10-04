@@ -1,0 +1,87 @@
+// Paragraph
+p {
+  margin: 0 0 ($spacer / 2);
+}
+
+// Horizontal Rule
+hr {
+  border: 0;
+  height: 2px;
+  background-color: $colour-grey-lighter;
+}
+
+// Emphasis
+small {
+  font-size: 80%;
+  font-weight: normal;
+}
+
+mark {
+  padding: .2em;
+  background-color: $colour-utility-alert;
+}
+
+// Lists
+.list--unstyled {
+  @include list-unstyled;
+}
+
+.list--inline {
+  @include list-unstyled;
+}
+
+.list-item--inline {
+  display: inline-block;
+
+  &:not(:last-child) {
+    margin-right: 5px;
+  }
+}
+
+// Addreviation
+addr {
+  border-bottom: 1px dotted $colour-grey;
+  cursor: help;
+  text-decoration: none;
+}
+
+.initialism {
+  font-size: 90%;
+  text-transform: uppercase;
+}
+
+// Blockquote
+.blockquote {
+  padding: ($spacer / 2) $spacer;
+  margin-bottom: $spacer;
+  font-size: ($font-size-base * 1.25);
+  border-left: .25rem solid $colour-grey;
+
+  @at-root #{&}__footer {
+    display: block;
+    font-size: 80%;
+    color: $colour-grey;
+
+    &::before {
+      content: "\2014 \00A0"; // em dash, nbsp
+    }
+  }
+
+  @at-root #{&}__reverse {
+    padding-right: $spacer;
+    padding-left: 0;
+    text-align: right;
+    border-right: .25rem solid $colour-grey;
+    border-left: 0;
+
+    .blockquote__footer {
+      &::before {
+        content: "";
+      }
+
+      &::after {
+        content: "\00A0 \2014"; // nbsp, em dash
+      }
+    }
+  }
+}

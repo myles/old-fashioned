@@ -1,0 +1,70 @@
+// Inline and block code styles
+code,
+kbd,
+pre,
+samp {
+  font-family: $font-family-monospace;
+}
+
+// Inline code
+$code-padding-y: $spacer-y / 2 !default;
+$code-padding-x: $spacer-x / 2 !default;
+$code-font-size: 90% !default;
+$code-colour: #bd4147 !default;
+$code-bg: #f7f7f9 !default;
+
+$kbd-colour: #fff !default;
+$kbd-bg: #333 !default;
+$kbd-box-shadow: inset 0 -.1rem 0 rgba(0,0,0,.25) !default;
+
+$pre-colour: $colour-grey-dark !default;
+$pre-scrollable-max-height: 340px !default;
+
+code {
+  padding: $code-padding-y $code-padding-x;
+  font-size: $code-font-size;
+  color: $code-colour;
+  background-color: $code-bg;
+
+  @include border-radius($border-radius);
+}
+
+kbd {
+  padding: $code-padding-y $code-padding-x;
+  font-size: $code-font-size;
+  color: $kbd-colour;
+  background-color: $kbd-bg;
+  box-shadow: $kbd-box-shadow;
+
+  @include border-radius($border-radius-sm);
+
+  kbd {
+    padding: 0;
+    font-size: 100%;
+    font-weight: bold;
+    box-shadow: none;
+  }
+}
+
+// Block of code
+pre {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: $code-font-size;
+  color: $pre-colour;
+
+  // Account for some code outputs that place code tags in pre tags
+  code {
+    padding: 0;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+    border-radius: 0;
+  }
+
+  @at-root #{&}--scrollable {
+    max-height: $pre-scrollable-max-height;
+    overflow-y: scroll;
+  }
+}

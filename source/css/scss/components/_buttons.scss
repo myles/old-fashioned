@@ -1,0 +1,112 @@
+$button-padding-y: $spacer-y !default;
+$button-padding-x: $spacer-x !default;
+
+$button-font-weight: 300 !default;
+$button-line-height: 1.25 !default;
+
+$button-border-width: $border-width !default;
+$button-border-radius: $border-radius !default;
+
+$button-box-shadow: inset 0 1px 0 rgba(255,255,255,.15), 0 1px 1px rgba(0,0,0,.075) !default;
+$button-active-box-shadow: inset 0 3px 5px rgba(0,0,0,.125) !default;
+
+.button {
+  display: inline-block;
+  font-weight: $button-font-weight;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  border: $button-border-width solid transparent;
+
+  @include button-size($button-padding-y, $button-padding-x, $button-border-radius);
+  @include transition(all .2s ease-in-out);
+
+  &,
+  &:active {
+    &:focus {
+      @include tab-focus();
+    }
+  }
+
+  @include hover-focus {
+    text-decoration: none;
+  }
+
+  @at-root #{&}--focus {
+    @include tab-focus();
+    text-decoration: none;
+  }
+
+  &:active {
+    background-image: none;
+    outline: 0;
+    box-shadow: $button-active-box-shadow;
+  }
+
+  @at-root #{&}--active {
+    background-image: none;
+    outline: 0;
+    box-shadow: $button-active-box-shadow;
+  }
+
+  @at-root #{&}--disabled {
+    cursor: not-allowed;
+    opacity: .65;
+    box-shadow: none;
+    pointer-events: none;
+  }
+
+  @each $name, $colour in $map-colours {
+    @at-root #{&}--#{$name} {
+      @if (lightness($colour) > 50) {
+        @include button-variant($colour-black, $colour, $colour);
+      } @else {
+        @include button-variant($colour-white, $colour, $colour);
+      }
+    }
+  }
+
+  @each $name, $colour in $map-colours {
+    @at-root #{&}--outline-#{$name} {
+      @include button-outline-variant($colour);
+    }
+  }
+
+  @at-root #{&}--link {
+    font-weight: normal;
+    color: $link-colour;
+    border-radius: 0;
+
+    &,
+    &:active,
+    &:disabled {
+      background-color: transparent;
+      box-shadow: none;
+    }
+
+    &,
+    &:focus,
+    &:active {
+      background-color: transparent;
+    }
+
+    @include hover {
+      border-color: transparent;
+    }
+
+    @include hover-focus {
+      color: $link-hover-colour;
+      text-decoration: $link-hover-decoration;
+      background-color: transparent;
+    }
+
+    &:disabled {
+      @include hover-focus {
+        color: $colour-grey-light;
+        text-decoration: none;
+      }
+    }
+  }
+}

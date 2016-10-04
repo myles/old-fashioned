@@ -1,0 +1,103 @@
+.grid {
+  @include outer-container; 
+  
+  @at-root #{&}__row {
+    @include row();
+  }
+  
+  @at-root #{&}__row--table {
+    @include display(table);
+  }
+  
+  @at-root #{&}__row--fill-parent {
+    @include fill-parent();
+  }
+  
+  // Just leaving this here for the furture
+  // @at-root #{&}__column {}
+  
+  @at-root #{&}__column--omega {
+    @include omega();
+  }
+  
+  @at-root #{&}__column--pad {
+    @include pad();
+  }
+  
+  @at-root #{&}__column--reset-display {
+    @include display(reset);
+  }
+  
+  @for $i from 1 through $grid-columns {
+    @at-root #{&}__column--#{$i} {
+      @include span-columns($i);
+    }
+    
+    @at-root #{&}__shift--#{$i} {
+      @include span-columns($i)
+    }
+    
+    @if $i / $grid-columns == 0.8 {
+      @at-root #{&}__column--four-fifths {
+        @include span-columns($i);
+      }
+    }
+    
+    @if $i / $grid-columns == 0.75 {
+      @at-root #{&}__column--three-quarters {
+        @include span-columns($i);
+      }
+    }
+    
+    @if $i / $grid-columns == 0.66 {
+      @at-root #{&}__column--two-thirds {
+        @include span-columns($i);
+      }
+    }
+    
+    @if $i / $grid-columns == 0.6 {
+      @at-root #{&}__column--three-fifths {
+        @include span-columns($i);
+      }
+    }
+    
+    @if $i / $grid-columns == 0.50 {
+      @at-root #{&}__column--half {
+        @include span-columns($i);
+      }
+    }
+    
+    @if $i / $grid-columns == 0.4 {
+      @at-root #{&}__column--two-fifths {
+        @include span-columns($i);
+      }
+    }
+    
+    @if $i / $grid-columns == 0.33 {
+      @at-root #{&}__column--one-third {
+        @include span-columns($i);
+      }
+    }
+    
+    @if $i / $grid-columns == 0.25 {
+      @at-root #{&}__column--one-quarter {
+        @include span-columns($i);
+      }
+    }
+    
+    @if $i / $grid-columns == 0.2 {
+      @at-root #{&}__column--one-fifth {
+        @include span-columns($i);
+      }
+    }
+    
+    @if $i > 1 {
+      // Make sure we don't do a nest of 1 of 1.
+      @for $a from 1 through $i {
+        @at-root #{&}__nest--#{$a}-of-#{$i} {
+          @include span-columns($a of $i);
+        }
+      }
+    }
+  }
+}
