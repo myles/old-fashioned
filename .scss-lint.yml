@@ -1,6 +1,0 @@
-linters:
-  BemDepth:
-    enabled: true
-    max_elements: 1
-  SelectorFormat:
-    convention: strict_BEM

@@ -1,0 +1,5 @@
+html {
+  @include font-size($font-size-root);
+
+  background-color: $html-background;
+}

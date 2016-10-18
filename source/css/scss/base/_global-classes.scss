@@ -1,0 +1,108 @@
+// Clearfix
+.cf {
+  *zoom: 1;
+
+  &:before {
+    content: ' ';
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+// Completely remove from the flow and screen readers.
+.is-hidden {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+// Completely remove from the flow but leave available to screen readers.
+.is-vishidden {
+  position: absolute !important;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+// Text align right
+.align-right {
+  text-align: right;
+}
+
+// Text align center
+.align-center {
+  text-align: center;
+}
+
+// Text align left
+.align-left {
+  text-align: left;
+}
+
+// Hide on xs screens
+.hide-xs {
+  @include media(max-width map-get($grid-breakpoints, sm)) {
+    display: none;
+  }
+}
+
+// Hide on sm screens
+.hide-sm {
+  @include media(min-width map-get($grid-breakpoints, sm)
+                 max-width map-get($grid-breakpoints, md)) {
+    display: none;
+  }
+}
+
+// Hide on md screens
+.hide-md {
+  @include media(min-width map-get($grid-breakpoints, md)
+                 max-width map-get($grid-breakpoints, lg)) {
+    display: none;
+  }
+}
+
+// Hide on lg screens
+.hide-lg {
+  @include media(min-width map-get($grid-breakpoints, lg)
+                 max-width map-get($grid-breakpoints, xl)) {
+    display: none;
+  }
+}
+
+// Hide on xl screens
+.hide-xl {
+  @include media(min-width map-get($grid-breakpoints, xl)) {
+    display: none;
+  }
+}
+
+// Display base font family
+.font-family-base {
+  font-family: $font-family-base;
+}
+
+// Display sans serif font family
+.font-family-sans-serif {
+  font-family: $font-family-sans-serif;
+}
+
+// Display serif font family
+.font-family-serif {
+  font-family: $font-family-serif;
+}
+
+// Display monospace font family
+.font-family-monospace {
+  font-family: $font-family-monospace;
+}
+
+// Display slab font family
+.font-family-slab {
+  font-family: $font-family-slab;
+}

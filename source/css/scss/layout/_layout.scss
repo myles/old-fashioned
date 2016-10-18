@@ -1,0 +1,102 @@
+.l-grid {
+  @include outer-container;
+}
+
+.l-row {
+  @include row();
+
+  @at-root #{&}--table {
+    @include display(table);
+  }
+
+  @at-root #{&}--fill-parent {
+    @include fill-parent();
+  }
+}
+
+.l-column {
+  @at-root #{&}--omega {
+    @include omega();
+  }
+
+  @at-root #{&}--pad {
+    @include pad();
+  }
+
+  @at-root #{&}--reset-display {
+    @include display(reset);
+  }
+
+  @for $i from 1 through $grid-columns {
+    @at-root #{&}--#{$i} {
+      @include span-columns($i);
+    }
+
+    @at-root #{&}--shift-#{$i} {
+      @include span-columns($i);
+    }
+
+    @if $i / $grid-columns == .8 {
+      @at-root #{&}--four-fifths {
+        @include span-columns($i);
+      }
+    }
+
+    @if $i / $grid-columns == .75 {
+      @at-root #{&}--three-quarters {
+        @include span-columns($i);
+      }
+    }
+
+    @if $i / $grid-columns == .66 {
+      @at-root #{&}--two-thirds {
+        @include span-columns($i);
+      }
+    }
+
+    @if $i / $grid-columns == .6 {
+      @at-root #{&}--three-fifths {
+        @include span-columns($i);
+      }
+    }
+
+    @if $i / $grid-columns == .50 {
+      @at-root #{&}--half {
+        @include span-columns($i);
+      }
+    }
+
+    @if $i / $grid-columns == .4 {
+      @at-root #{&}--two-fifths {
+        @include span-columns($i);
+      }
+    }
+
+    @if $i / $grid-columns == .33 {
+      @at-root #{&}--one-third {
+        @include span-columns($i);
+      }
+    }
+
+    @if $i / $grid-columns == .25 {
+      @at-root #{&}--one-quarter {
+        @include span-columns($i);
+      }
+    }
+
+    @if $i / $grid-columns == .2 {
+      @at-root #{&}--one-fifth {
+        @include span-columns($i);
+      }
+    }
+
+    @if $i > 1 {
+      // Make sure we don't do a nest of 1 of 1.
+      @for $a from 1 through $i {
+        @at-root #{&}--nest-#{$a}of#{$i} {
+          @include span-columns($a of $i);
+        }
+      }
+    }
+  }
+}
