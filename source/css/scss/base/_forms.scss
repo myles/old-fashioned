@@ -1,0 +1,23 @@
+// Form Label
+$form-label-required-colour: $colour-utility-alert;
+$form-label-optional-colour: $colour-utility-notice;
+
+.form-label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: $spacer-y;
+
+  @at-root #{&}--small {
+    font-size: $font-size-sm;
+  }
+
+  @at-root #{&}__required {
+    color: $form-label-required-colour;
+    font-weight: normal;
+  }
+
+  @at-root #{&}__optional {
+    color: $form-label-optional-colour;
+    font-weight: normal;
+  }
+}
