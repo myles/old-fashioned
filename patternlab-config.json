@@ -11,7 +11,9 @@
       "js" : "./source/js",
       "images" : "./source/images",
       "fonts" : "./source/fonts",
-      "css" : "./source/css/"
+      "css" : "./source/css/",
+      "sass": "./source/sass/",
+      "bower": "./bower_components/"
     },
     "public" : {
       "root" : "./public/",
@@ -22,7 +24,8 @@
       "js" : "./public/js",
       "images" : "./public/images",
       "fonts" : "./public/fonts",
-      "css" : "./public/css"
+      "css" : "./public/css",
+      "bower": "./bower_components/"
     }
   },
   "styleGuideExcludes": [

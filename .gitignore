@@ -1,6 +1,8 @@
-/node_modules/
-/bower_components/
+node_modules/
+bower_components/
 
-/public/
-
+public/
 patternlab.json
+
+.sass-cache/
+config.codekit

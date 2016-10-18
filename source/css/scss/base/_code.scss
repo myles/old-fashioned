@@ -15,52 +15,52 @@ $code-bg: #f7f7f9 !default;
 
 $kbd-colour: #fff !default;
 $kbd-bg: #333 !default;
-$kbd-box-shadow: inset 0 -.1rem 0 rgba(0,0,0,.25) !default;
-
-$pre-colour: $colour-grey-dark !default;
-$pre-scrollable-max-height: 340px !default;
+$kbd-box-shadow: inset 0 -.1rem 0 rgba(0, 0, 0, .25) !default;
 
 code {
-  padding: $code-padding-y $code-padding-x;
-  font-size: $code-font-size;
-  color: $code-colour;
-  background-color: $code-bg;
-
   @include border-radius($border-radius);
+
+  background-color: $code-bg;
+  color: $code-colour;
+  font-size: $code-font-size;
+  padding: $code-padding-y $code-padding-x;
 }
 
 kbd {
-  padding: $code-padding-y $code-padding-x;
-  font-size: $code-font-size;
-  color: $kbd-colour;
-  background-color: $kbd-bg;
-  box-shadow: $kbd-box-shadow;
-
   @include border-radius($border-radius-sm);
 
+  background-color: $kbd-bg;
+  box-shadow: $kbd-box-shadow;
+  color: $kbd-colour;
+  font-size: $code-font-size;
+  padding: $code-padding-y $code-padding-x;
+
   kbd {
-    padding: 0;
+    box-shadow: none;
     font-size: 100%;
     font-weight: bold;
-    box-shadow: none;
+    padding: 0;
   }
 }
 
 // Block of code
+$pre-colour: $colour-grey-dark !default;
+$pre-scrollable-max-height: 340px !default;
+
 pre {
-  display: block;
-  margin-top: 0;
-  margin-bottom: 1rem;
-  font-size: $code-font-size;
   color: $pre-colour;
+  display: block;
+  font-size: $code-font-size;
+  margin-bottom: 1rem;
+  margin-top: 0;
 
   // Account for some code outputs that place code tags in pre tags
   code {
-    padding: 0;
-    font-size: inherit;
-    color: inherit;
     background-color: transparent;
     border-radius: 0;
+    color: inherit;
+    font-size: inherit;
+    padding: 0;
   }
 
   @at-root #{&}--scrollable {

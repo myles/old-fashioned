@@ -35,8 +35,8 @@ $colour-corp-tumblr: #36465d;
 $colour-corp-youtube: #cd201f;
 $colour-corp-instagram: #517fa4;
 $colour-corp-github: #333;
-$colour-corp-hacker-news: #ff6600;
-$colour-corp-ibm: #006699;
+$colour-corp-hacker-news: #f60;
+$colour-corp-ibm: #069;
 
 // Primary Colour
 $colour-primary: $colour-cerulean !default;
@@ -87,10 +87,10 @@ $grid-columns: 12 !default;
 // ----------
 
 // Font Family
-$font-family-sans-serif: "Proxima Nova", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
-$font-family-serif: "Baskerville", "Libre Baskerville", Georgia, "Times New Roman", Times, serif !default;
-$font-family-monospace: "Hack", Menlo, Monaco, Consolas, "Courier New", monospace !default;
-$font-family-slab: "Sigmar One" !default;
+$font-family-sans-serif: 'Proxima Nova', 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif !default;
+$font-family-serif: 'Baskerville', 'Libre Baskerville', Georgia, 'Times New Roman', Times, serif !default;
+$font-family-monospace: 'Hack', Menlo, Monaco, Consolas, 'Courier New', monospace !default;
+$font-family-slab: 'Sigmar One' !default;
 $font-family-base: $font-family-sans-serif !default;
 
 // Font Size

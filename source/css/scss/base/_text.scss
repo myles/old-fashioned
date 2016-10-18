@@ -5,9 +5,9 @@ p {
 
 // Horizontal Rule
 hr {
+  background-color: $colour-grey-lighter;
   border: 0;
   height: 2px;
-  background-color: $colour-grey-lighter;
 }
 
 // Emphasis
@@ -17,8 +17,8 @@ small {
 }
 
 mark {
-  padding: .2em;
   background-color: $colour-utility-alert;
+  padding: .2em;
 }
 
 // Lists
@@ -52,36 +52,34 @@ addr {
 
 // Blockquote
 .blockquote {
-  padding: ($spacer / 2) $spacer;
-  margin-bottom: $spacer;
-  font-size: ($font-size-base * 1.25);
   border-left: .25rem solid $colour-grey;
+  font-size: ($font-size-base * 1.25);
+  margin-bottom: $spacer;
+  padding: ($spacer / 2) $spacer;
 
   @at-root #{&}__footer {
+    color: $colour-grey;
     display: block;
     font-size: 80%;
-    color: $colour-grey;
 
     &::before {
-      content: "\2014 \00A0"; // em dash, nbsp
+      content: '\2014 \00A0'; // em dash, nbsp
     }
   }
 
   @at-root #{&}__reverse {
-    padding-right: $spacer;
-    padding-left: 0;
-    text-align: right;
-    border-right: .25rem solid $colour-grey;
     border-left: 0;
+    border-right: .25rem solid $colour-grey;
+    padding-left: 0;
+    padding-right: $spacer;
+    text-align: right;
 
-    .blockquote__footer {
-      &::before {
-        content: "";
-      }
+    .blockquote__footer::before {
+      content: '';
+    }
 
-      &::after {
-        content: "\00A0 \2014"; // nbsp, em dash
-      }
+    .blockquote_footer::after {
+      content: '\00A0 \2014'; // nbsp, em dash
     }
   }
 }
