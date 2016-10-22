@@ -1,6 +1,78 @@
+$form-field-background-colour: $colour-white;
+$form-field-border-colour: $colour-grey-lighter;
+$form-field-colour: $body-colour;
+
+%form-field {
+  background-color: $form-field-background-colour;
+  border: 1px solid $form-field-border-colour;
+  color: $form-field-colour;
+  font-family: inherit;
+  line-height: $line-height-base;
+  padding: $spacer-x $spacer-y;
+
+  &:disabled {
+    opacity: .3;
+  }
+
+  @at-root #{&}--small {
+    font-size: $font-size-sm;
+    padding: ($spacer-y / 2) ($spacer-x / 2);
+  }
+}
+
+// Text Input
+.form-text-input {
+  @extend %form-field;
+}
+
+// Textarea
+.form-textarea {
+  @extend %form-field;
+}
+
+// Select
+.form-select {
+  @extend %form-field;
+}
+
+// Fieldset
+$fieldset-responses: (
+  alert: darken($colour-utility-alert, 50%),
+  erorr: darken($colour-utility-error, 50%),
+  notice: darken($colour-utility-notice, 50%),
+  success: darken($colour-utility-sucess, 50%)
+);
+
+.form-fieldset {
+  display: block;
+  margin-top: $spacer;
+
+  @each $response, $colour in $fieldset-responses {
+    @at-root #{&}--#{$response} {
+      .form-feedback,
+      .form-label {
+        color: $colour;
+      }
+
+      .form-text-input,
+      .form-textarea,
+      .form-select {
+        border-color: $colour;
+      }
+    }
+  }
+}
+
+// Form Feedback
+.form-feedback {
+  display: block;
+  font-size: $font-size-sm;
+  margin-top: $spacer-x;
+}
+
 // Form Label
-$form-label-required-colour: $colour-utility-alert;
-$form-label-optional-colour: $colour-utility-notice;
+$form-label-required-colour: darken($colour-utility-error, 50%);
+$form-label-optional-colour: darken($colour-utility-notice, 25%);
 
 .form-label {
   display: block;

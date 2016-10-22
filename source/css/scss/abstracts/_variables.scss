@@ -37,6 +37,8 @@ $colour-corp-instagram: #517fa4;
 $colour-corp-github: #333;
 $colour-corp-hacker-news: #f60;
 $colour-corp-ibm: #069;
+$colour-corp-vine: #00b488;
+$colour-corp-snapchat: #fffc00;
 
 // Primary Colour
 $colour-primary: $colour-cerulean !default;
@@ -53,7 +55,7 @@ $body-colour: $colour-grey-dark !default;
 
 $spacer: 1rem !default;
 $spacer-y: $spacer / 2 !default;
-$spacer-x: $spacer !default;
+$spacer-x: $spacer / 1.33 !default;
 
 $border-width: 1px !default;
 
