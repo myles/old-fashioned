@@ -9,72 +9,130 @@
 }
 
 // Heading 1
-h1,
-.heading-one {
+%heading-one {
   @extend %headings;
+
   font-size: $font-size-heading-one;
 }
 
+h1,
+.heading-one {
+  @extend %heading-one;
+}
+
 // Heading 2
-h2,
-.heading-two {
+%heading-two {
   @extend %headings;
+
   font-size: $font-size-heading-two;
 }
 
+h2,
+.heading-two {
+  @extend %heading-two;
+}
+
 // Heading 3
-h3,
-.heading-three {
+%heading-three {
   @extend %headings;
   font-size: $font-size-heading-three;
 }
 
+h3,
+.heading-three {
+  @extend %heading-three;
+}
+
 // Heading 4
-h4,
-.heading-four {
+%heading-four {
   @extend %headings;
+
   font-size: $font-size-heading-four;
 }
 
+h4,
+.heading-four {
+  @extend %heading-four;
+}
+
 // Heading 5
-h5,
-.heading-five {
+%heading-five {
   @extend %headings;
+
   font-size: $font-size-heading-five;
 }
 
+h5,
+.heading-five {
+  @extend %heading-five;
+}
+
 // Heading 6
+%heading-six {
+  @extend %headings;
+
+  font-size: $font-size-heading-six;
+}
+
 h6,
 .heading-six {
-  @extend %headings;
-  font-size: $font-size-heading-six;
+  @extend %heading-six;
 }
 
 // Display
 // -------
-// %displays {}
+%displays {
+  color: $display-colour;
+  font-family: $display-font-family;
+  line-height: $display-line-height;
+  margin-bottom: $display-margin-bottom;
+  margin-top: $display-margin-top;
+}
 
 // Display 1
-.display-one {
-  // @extend %displays;
+%display-one {
+  @extend %displays;
+
   font-size: $font-size-display-one;
   font-weight: $font-weight-display-one;
 }
 
-.display-two {
-  // @extend %displays;
+.display-one {
+  @extend %display-one;
+}
+
+// Display Two
+%display-two {
+  @extend %displays;
+
   font-size: $font-size-display-two;
   font-weight: $font-weight-display-two;
 }
 
-.display-three {
-  // @extend %displays;
+.display-two {
+  @extend %display-two;
+}
+
+// Display Three
+%display-three {
+  @extend %displays;
+
   font-size: $font-size-display-three;
   font-weight: $font-weight-display-three;
 }
 
-.display-four {
-  // @extend %displays;
+.display-three {
+  @extend %display-three;
+}
+
+// Display Four
+%display-four {
+  @extend %displays;
+
   font-size: $font-size-display-four;
   font-weight: $font-weight-display-four;
+}
+
+.display-four {
+  @extend %display-four;
 }

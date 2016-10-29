@@ -137,3 +137,10 @@ $font-weight-display-one: $font-weight-display !default;
 $font-weight-display-two: $font-weight-display !default;
 $font-weight-display-three: $font-weight-display !default;
 $font-weight-display-four: $font-weight-display !default;
+
+$display-margin-bottom: ($spacer / 2) !default;
+$display-margin-top: ($spacer / 2) !default;
+$display-font-family: inherit !default;
+$display-font-weight: 500 !default;
+$display-line-height: 1.1 !default;
+$display-colour: inherit !default;
