@@ -1,0 +1,7 @@
+@mixin font-families {
+  @each $bem-element, $font-family in $map-font-families {
+    @at-root #{&}--#{$bem-element} {
+      font-family: $font-family;
+    }
+  }
+}

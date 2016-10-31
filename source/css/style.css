@@ -596,25 +596,79 @@ h1,
 .heading-one {
   font-size: 2.5rem; }
 
+h1, .heading-one--sans-serif {
+  font-family: "Proxima Nova", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+h1, .heading-one--serif {
+  font-family: "Baskerville", "Libre Baskerville", Georgia, "Times New Roman", Times, serif; }
+h1, .heading-one--monospace {
+  font-family: "Hack", Menlo, Monaco, Consolas, "Courier New", monospace; }
+h1, .heading-one--slab {
+  font-family: "Sigmar One"; }
+
 h2,
 .heading-two {
   font-size: 2rem; }
+
+h2, .heading-two--sans-serif {
+  font-family: "Proxima Nova", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+h2, .heading-two--serif {
+  font-family: "Baskerville", "Libre Baskerville", Georgia, "Times New Roman", Times, serif; }
+h2, .heading-two--monospace {
+  font-family: "Hack", Menlo, Monaco, Consolas, "Courier New", monospace; }
+h2, .heading-two--slab {
+  font-family: "Sigmar One"; }
 
 h3,
 .heading-three {
   font-size: 1.75rem; }
 
+h3, .heading-three--sans-serif {
+  font-family: "Proxima Nova", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+h3, .heading-three--serif {
+  font-family: "Baskerville", "Libre Baskerville", Georgia, "Times New Roman", Times, serif; }
+h3, .heading-three--monospace {
+  font-family: "Hack", Menlo, Monaco, Consolas, "Courier New", monospace; }
+h3, .heading-three--slab {
+  font-family: "Sigmar One"; }
+
 h4,
 .heading-four {
   font-size: 1.5rem; }
+
+h4, .heading-four--sans-serif {
+  font-family: "Proxima Nova", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+h4, .heading-four--serif {
+  font-family: "Baskerville", "Libre Baskerville", Georgia, "Times New Roman", Times, serif; }
+h4, .heading-four--monospace {
+  font-family: "Hack", Menlo, Monaco, Consolas, "Courier New", monospace; }
+h4, .heading-four--slab {
+  font-family: "Sigmar One"; }
 
 h5,
 .heading-five {
   font-size: 1.25rem; }
 
+h5, .heading-five--sans-serif {
+  font-family: "Proxima Nova", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+h5, .heading-five--serif {
+  font-family: "Baskerville", "Libre Baskerville", Georgia, "Times New Roman", Times, serif; }
+h5, .heading-five--monospace {
+  font-family: "Hack", Menlo, Monaco, Consolas, "Courier New", monospace; }
+h5, .heading-five--slab {
+  font-family: "Sigmar One"; }
+
 h6,
 .heading-six {
   font-size: 1rem; }
+
+h6, .heading-six--sans-serif {
+  font-family: "Proxima Nova", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+h6, .heading-six--serif {
+  font-family: "Baskerville", "Libre Baskerville", Georgia, "Times New Roman", Times, serif; }
+h6, .heading-six--monospace {
+  font-family: "Hack", Menlo, Monaco, Consolas, "Courier New", monospace; }
+h6, .heading-six--slab {
+  font-family: "Sigmar One"; }
 
 .display-one, .display-two, .display-three, .display-four {
   color: inherit;
@@ -627,17 +681,53 @@ h6,
   font-size: 6rem;
   font-weight: 300; }
 
+.display-one--sans-serif {
+  font-family: "Proxima Nova", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+.display-one--serif {
+  font-family: "Baskerville", "Libre Baskerville", Georgia, "Times New Roman", Times, serif; }
+.display-one--monospace {
+  font-family: "Hack", Menlo, Monaco, Consolas, "Courier New", monospace; }
+.display-one--slab {
+  font-family: "Sigmar One"; }
+
 .display-two {
   font-size: 5.5rem;
   font-weight: 300; }
+
+.display-two--sans-serif {
+  font-family: "Proxima Nova", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+.display-two--serif {
+  font-family: "Baskerville", "Libre Baskerville", Georgia, "Times New Roman", Times, serif; }
+.display-two--monospace {
+  font-family: "Hack", Menlo, Monaco, Consolas, "Courier New", monospace; }
+.display-two--slab {
+  font-family: "Sigmar One"; }
 
 .display-three {
   font-size: 4.5rem;
   font-weight: 300; }
 
+.display-three--sans-serif {
+  font-family: "Proxima Nova", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+.display-three--serif {
+  font-family: "Baskerville", "Libre Baskerville", Georgia, "Times New Roman", Times, serif; }
+.display-three--monospace {
+  font-family: "Hack", Menlo, Monaco, Consolas, "Courier New", monospace; }
+.display-three--slab {
+  font-family: "Sigmar One"; }
+
 .display-four {
   font-size: 3.5rem;
   font-weight: 300; }
+
+.display-four--sans-serif {
+  font-family: "Proxima Nova", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+.display-four--serif {
+  font-family: "Baskerville", "Libre Baskerville", Georgia, "Times New Roman", Times, serif; }
+.display-four--monospace {
+  font-family: "Hack", Menlo, Monaco, Consolas, "Courier New", monospace; }
+.display-four--slab {
+  font-family: "Sigmar One"; }
 
 a {
   color: #24a5d4;
