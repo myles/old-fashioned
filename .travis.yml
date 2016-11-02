@@ -3,7 +3,7 @@ before_script:
 - npm install -g sass-lint
 script:
 - sass-lint source/**/*.scss
-after_sucess:
+after_success:
 - grunt patternlab copy:main
 deploy:
   provider: s3
