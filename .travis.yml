@@ -3,8 +3,9 @@ before_script:
 - npm install -g sass-lint
 script:
 - sass-lint source/**/*.scss
+- grunt patternlab
 after_success:
-- grunt patternlab copy:main
+- grunt copy:main
 deploy:
   provider: s3
   access_key_id: AKIAIP5UVN77EFW7SUYA
