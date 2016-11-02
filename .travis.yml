@@ -1,0 +1,16 @@
+language: node_js
+before_script:
+- npm install -g sass-lint
+script:
+- sass-lint source/**/*.scss
+after_sucess:
+- grunt patternlab copy:main
+deploy:
+  provider: s3
+  access_key_id: AKIAIP5UVN77EFW7SUYA
+  secret_access_key:
+    secure: EV6BVRH1pj7vfIUmRiCZk4KNo8Lh5nrNuES2ppkOoxtjDT4LKuIyn7Q95UZhTEPZ+sTHk18ogtiDE6+MAxvTR3SG3NB4viGuLT4++Y2fk5FlotItSoPqr0nLJUooFUJoBS65hB2SKV4TpdE7ijVZQxPZEXBpJoffb7CXhEZunO5GPMdK2kjHSeSmhn5/sKx7i4hsVcKwAvp2w+4ElukA4lwD5cLVhXMQDj44uLHG9U60nFgYhou7OsGV5CN9nY1Wa1IH0l+0gzgiuAtLScOhYVRrfAoosc567kKRMN5YG95F2wgYNfIrkxH3nDh2JDDIIADYV7Jqn36Wg2wROPFUVs9V887ckHE0X49979cnGRFLh3iPEbYyMUFWFQrRGEaZ/wBA944YPMtCX1hVAe+/0M1xUtD+NMHZ5gYi04ISo76063zUr39PtxSEQD7VSQ5DFjtXF6E0UcXRMLeN1VI7tPXB28CmbynJ2lrgivVnLxjsNIS39o+2m7u0e5x9r7v+viXPIN4iX8j/RuyRGk9/Hd79Gi0Uyt7C2EKF3ZYMZXAXVkhRUMid6pfVJC1hjhcEQtlk3uZBj+/9zvUMtwx4CVGZpNiRpj6sh/ghSMoOPh+TEgsE3L+eoavRO5B9YeIcS4AT/R6pMEX0IjbAYveZopc+SFX7F8iZEMk0X+pPYo4=
+  bucket: old-fashioned
+  local-dir: public
+  acl: public_read
+  skip_cleanup: true
