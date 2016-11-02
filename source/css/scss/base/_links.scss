@@ -1,7 +1,8 @@
 a {
+  @include transition($link-transition);
+
   color: $link-colour;
   text-decoration: $link-decoration;
-  @include transition($link-transition);
 
   &:active,
   &:focus,

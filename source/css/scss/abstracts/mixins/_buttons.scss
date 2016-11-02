@@ -52,6 +52,7 @@
       border-color: $border;
     }
 
+    // scss-lint:disable DeclarationOrder
     @include hover {
       background-color: $background;
       border-color: $border;
@@ -101,6 +102,7 @@
       border-color: lighten($color, 20%);
     }
 
+    // scss-lint:disable DeclarationOrder
     @include hover {
       border-color: lighten($color, 20%);
     }

@@ -1,24 +1,63 @@
-table {
+// scss-lint:disable SelectorFormat
+
+%table {
   border-collapse: collapse;
   margin: ($spacer / 2) 0;
   table-layout: fixed;
   width: 100%;
 }
 
-th {
+%tr {
+  vertical-align: middle;
+}
+
+%td {
+  border-bottom: $border-width solid $colour-grey-light;
+  padding: ($spacer / 2) 0;
+  vertical-align: middle;
+}
+
+%th {
   border-bottom: 1px solid shade($colour-grey-light, 25%);
   font-weight: 600;
   padding: ($spacer / 2) 0;
   text-align: left;
 }
 
-td {
-  border-bottom: $border-width solid $colour-grey-light;
-  padding: ($spacer / 2) 0;
+// %thead {}
+// %tfoot {}
+
+.table {
+  @extend %table;
+
+  @at-root #{&}__row {
+    @extend %tr;
+
+    // @at-root #{&}--head { @extend %thead; }
+    // @at-root #{&}--foot { @extend %tfoot; }
+  }
+
+  @at-root #{&}__cell {
+    @extend %td;
+
+    @at-root #{&}--head {
+      @extend %th;
+    }
+  }
 }
 
-tr,
-td,
+table {
+  @extend %table;
+}
+
+tr {
+  @extend %tr;
+}
+
+td {
+  @extend %td;
+}
+
 th {
-  vertical-align: middle;
+  @extend %th;
 }

@@ -15,7 +15,7 @@ $code-bg: #f7f7f9 !default;
 
 $kbd-colour: #fff !default;
 $kbd-bg: #333 !default;
-$kbd-box-shadow: inset 0 -.1rem 0 rgba(0, 0, 0, .25) !default;
+$kbd-box-shadow: inset 0 -.1rem 0 $trans-black-25 !default;
 
 code {
   @include border-radius($border-radius);

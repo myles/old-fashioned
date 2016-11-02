@@ -1,4 +1,6 @@
-/*! normalize.css v4.2.0 | MIT License | github.com/necolas/normalize.css */
+// normalize.css v4.2.0 | MIT License | github.com/necolas/normalize.css
+
+// scss-lint:disable QualifyingElement, ColorVariable, DuplicateProperty, MergeableSelector
 
 //
 // 1. Change the default font family in all browsers (opinionated).
@@ -7,10 +9,10 @@
 //
 
 html {
+  @include prefixer(text-size, 100%, ms webkit);
+
   font-family: sans-serif; // 1
   line-height: 1.15; // 2
-  -ms-text-size-adjust: 100%; // 3
-  -webkit-text-size-adjust: 100%; // 3
 }
 
 //
@@ -115,7 +117,7 @@ a:hover {
 //
 
 abbr[title] {
-  border-bottom: none; // 1
+  border-bottom: 0; // 1
   text-decoration: underline; // 2
   text-decoration: underline dotted; // 2
 }
@@ -153,7 +155,7 @@ dfn {
 
 h1 {
   font-size: 2em;
-  margin: 0.67em 0;
+  margin: .67em 0;
 }
 
 //
@@ -187,11 +189,11 @@ sup {
 }
 
 sub {
-  bottom: -0.25em;
+  bottom: -.25em;
 }
 
 sup {
-  top: -0.5em;
+  top: -.5em;
 }
 
 // Embedded content
@@ -336,7 +338,7 @@ button:-moz-focusring,
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em;
+  padding: .35em .625em .75em;
 }
 
 //
@@ -408,7 +410,7 @@ textarea {
 
 ::-webkit-input-placeholder {
   color: inherit;
-  opacity: 0.54;
+  opacity: .54;
 }
 
 //

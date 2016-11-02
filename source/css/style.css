@@ -4,12 +4,11 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
-/*! normalize.css v4.2.0 | MIT License | github.com/necolas/normalize.css */
 html {
+  -ms-text-size: 100%;
+  -webkit-text-size: 100%;
   font-family: sans-serif;
-  line-height: 1.15;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%; }
+  line-height: 1.15; }
 
 body {
   margin: 0; }
@@ -54,7 +53,7 @@ a:hover {
   outline-width: 0; }
 
 abbr[title] {
-  border-bottom: none;
+  border-bottom: 0;
   text-decoration: underline;
   text-decoration: underline dotted; }
 
@@ -71,7 +70,7 @@ dfn {
 
 h1 {
   font-size: 2em;
-  margin: 0.67em 0; }
+  margin: .67em 0; }
 
 mark {
   background-color: #ff0;
@@ -88,10 +87,10 @@ sup {
   vertical-align: baseline; }
 
 sub {
-  bottom: -0.25em; }
+  bottom: -.25em; }
 
 sup {
-  top: -0.5em; }
+  top: -.5em; }
 
 img {
   border-style: none; }
@@ -155,7 +154,7 @@ button:-moz-focusring,
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em; }
+  padding: .35em .625em .75em; }
 
 legend {
   box-sizing: border-box;
@@ -187,7 +186,7 @@ textarea {
 
 ::-webkit-input-placeholder {
   color: inherit;
-  opacity: 0.54; }
+  opacity: .54; }
 
 ::-webkit-file-upload-button {
   -webkit-appearance: button;
@@ -515,11 +514,11 @@ pre {
     font-weight: normal; }
 
 .cf {
-  *zoom: 1; }
-  .cf:before {
+  zoom: 1; }
+  .cf::before {
     content: ' ';
     display: table; }
-  .cf:after {
+  .cf::after {
     clear: both; }
 
 .is-hidden {
@@ -527,13 +526,13 @@ pre {
   visibility: hidden !important; }
 
 .is-vishidden {
-  position: absolute !important;
-  overflow: hidden;
-  width: 1px;
-  height: 1px;
-  padding: 0;
   border: 0;
-  clip: rect(1px, 1px, 1px, 1px); }
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  width: 1px; }
 
 .align-right {
   text-align: right; }
@@ -730,56 +729,58 @@ h6, .heading-six--slab {
   font-family: "Sigmar One"; }
 
 a {
-  color: #24a5d4;
-  text-decoration: none;
   -webkit-transition: color 150ms ease;
   -moz-transition: color 150ms ease;
-  transition: color 150ms ease; }
+  transition: color 150ms ease;
+  color: #24a5d4;
+  text-decoration: none; }
   a:active, a:focus, a:hover {
     color: #1b7c9f;
     text-decoration: underline; }
 
-table {
+.table, table {
   border-collapse: collapse;
   margin: 0.5rem 0;
   table-layout: fixed;
   width: 100%; }
 
-th {
+.table__row, tr {
+  vertical-align: middle; }
+
+.table__cell, td {
+  border-bottom: 1px solid #878c90;
+  padding: 0.5rem 0;
+  vertical-align: middle; }
+
+.table__cell--head, th {
   border-bottom: 1px solid #65696c;
   font-weight: 600;
   padding: 0.5rem 0;
   text-align: left; }
 
-td {
-  border-bottom: 1px solid #878c90;
-  padding: 0.5rem 0; }
-
-tr,
-td,
-th {
-  vertical-align: middle; }
-
-p {
+p,
+.paragraph {
   margin: 0 0 0.5rem; }
 
-hr {
+hr,
+.horizontal-rule {
   background-color: #bcbfc1;
   border: 0;
   height: 2px; }
 
-small {
+small,
+.small {
   font-size: 80%;
   font-weight: normal; }
 
-mark {
+mark,
+.mark {
   background-color: #fff6bf;
   padding: .2em; }
 
 .list--unstyled {
   padding-left: 0;
   list-style: none; }
-
 .list--inline {
   padding-left: 0;
   list-style: none; }
@@ -789,7 +790,8 @@ mark {
   .list-item--inline:not(:last-child) {
     margin-right: 5px; }
 
-addr {
+addr,
+.addreviation {
   border-bottom: 1px dotted #55595c;
   cursor: help;
   text-decoration: none; }

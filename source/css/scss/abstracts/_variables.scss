@@ -43,6 +43,18 @@ $colour-corp-snapchat: #fffc00;
 // Primary Colour
 $colour-primary: $colour-cerulean !default;
 
+// Transparencies
+$trans-black-7-5: rgba(0, 0, 0, .075);
+$trans-black-12-5: rgba(0, 0, 0, .125);
+$trans-black-25: rgba(0, 0, 0, .25);
+$trans-black-50: rgba(0, 0, 0, .50);
+$trans-black-75: rgba(0, 0, 0, .75);
+
+$trans-white-15: rgba(255, 255, 255, .15);
+$trans-white-25: rgba(255, 255, 255, .25);
+$trans-white-50: rgba(255, 255, 255, .50);
+$trans-white-75: rgba(255, 255, 255, .75);
+
 // HTML & Body
 // -----------
 

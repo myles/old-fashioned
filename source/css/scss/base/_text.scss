@@ -1,33 +1,39 @@
 // Paragraph
-p {
+p,
+.paragraph {
   margin: 0 0 ($spacer / 2);
 }
 
 // Horizontal Rule
-hr {
+hr,
+.horizontal-rule {
   background-color: $colour-grey-lighter;
   border: 0;
   height: 2px;
 }
 
 // Emphasis
-small {
+small,
+.small {
   font-size: 80%;
   font-weight: normal;
 }
 
-mark {
+mark,
+.mark {
   background-color: $colour-utility-alert;
   padding: .2em;
 }
 
 // Lists
-.list--unstyled {
-  @include list-unstyled;
-}
+.list {
+  @at-root #{&}--unstyled {
+    @include list-unstyled;
+  }
 
-.list--inline {
-  @include list-unstyled;
+  @at-root #{&}--inline {
+    @include list-unstyled;
+  }
 }
 
 .list-item--inline {
@@ -39,7 +45,8 @@ mark {
 }
 
 // Addreviation
-addr {
+addr,
+.addreviation {
   border-bottom: 1px dotted $colour-grey;
   cursor: help;
   text-decoration: none;
@@ -74,6 +81,7 @@ addr {
     padding-right: $spacer;
     text-align: right;
 
+    // scss-lint:disable SelectorFormat
     .blockquote__footer::before {
       content: '';
     }
@@ -81,5 +89,6 @@ addr {
     .blockquote_footer::after {
       content: '\00A0 \2014'; // nbsp, em dash
     }
+    // scss-lint:enable SelectorFormat
   }
 }
