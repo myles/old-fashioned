@@ -15,7 +15,10 @@
   font-size: $font-size-heading-one;
 }
 
-h1,
+h1 {
+  @extend %heading-one;
+}
+
 .heading-one {
   @extend %heading-one;
   @include font-families;
@@ -28,7 +31,10 @@ h1,
   font-size: $font-size-heading-two;
 }
 
-h2,
+h2 {
+  @extend %heading-two;
+}
+
 .heading-two {
   @extend %heading-two;
   @include font-families;
@@ -40,7 +46,10 @@ h2,
   font-size: $font-size-heading-three;
 }
 
-h3,
+h3 {
+  @extend %heading-three;
+}
+
 .heading-three {
   @extend %heading-three;
   @include font-families;
@@ -53,7 +62,10 @@ h3,
   font-size: $font-size-heading-four;
 }
 
-h4,
+h4 {
+  @extend %heading-four;
+}
+
 .heading-four {
   @extend %heading-four;
   @include font-families;
@@ -66,7 +78,10 @@ h4,
   font-size: $font-size-heading-five;
 }
 
-h5,
+h5 {
+  @extend %heading-five;
+}
+
 .heading-five {
   @extend %heading-five;
   @include font-families;
@@ -79,7 +94,10 @@ h5,
   font-size: $font-size-heading-six;
 }
 
-h6,
+h6 {
+  @extend %heading-six;
+}
+
 .heading-six {
   @extend %heading-six;
   @include font-families;
