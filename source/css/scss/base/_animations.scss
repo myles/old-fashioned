@@ -1,27 +1,27 @@
 @include keyframes(multicolour-background) {
   0% {
-    background-color: $cape-code;
+    background-color: $colour-cape-code;
   }
 
   20% {
-    background-color: $wild-watermelon;
+    background-color: $colour-wild-watermelon;
   }
 
   40% {
-    background-color: $fire-bush;
+    background-color: $colour-fire-bush;
   }
 
   60% {
     // Bitter Lemon is a litte to light.
-    background-color: darken($bitter-lemon, 10%);
+    background-color: darken($colour-bitter-lemon, 10%);
   }
 
   80% {
-    background-color: $cerulean;
+    background-color: $colour-cerulean;
   }
 
   100% {
-    background-color: $cape-code;
+    background-color: $colour-cape-code;
   }
 }
 
