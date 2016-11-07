@@ -1,0 +1,44 @@
+// scss-lint:disable SelectorFormat
+
+.c-alert {
+  background-color: $colour-utility-alert;
+  color: shade($colour-utility-alert, 60%);
+  display: block;
+  margin-bottom: $spacer-y / 2;
+  padding: $spacer / 2;
+  text-align: center;
+
+  @at-root #{&}__link {
+    color: shade($colour-utility-alert, 70%);
+    text-decoration: underline;
+
+    &:focus,
+    &:hover {
+      color: shade($colour-utility-alert, 90%);
+    }
+  }
+
+  @at-root #{&}__title,
+           #{&}__copy,
+           #{&}__link {
+    display: inline-block;
+    font-size: 1em;
+  }
+}
+
+@each $type, $colour in $map-alert-colours {
+  .c-alert--#{$type} {
+    background-color: $colour;
+    color: shade($colour, 60%);
+
+    .alert__link {
+      color: shade($colour, 70%);
+      text-decoration: none;
+
+      &:focus,
+      &:hover {
+        color: shade($colour, 90%);
+      }
+    }
+  }
+}

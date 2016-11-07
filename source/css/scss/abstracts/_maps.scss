@@ -42,3 +42,10 @@ $map-font-families: (
   monospace: $font-family-monospace,
   slab: $font-family-slab
 );
+
+$map-alert-colours: (
+  alert: $colour-utility-alert,
+  error: $colour-utility-error,
+  notice: $colour-utility-notice,
+  sucess: $colour-utility-sucess
+);
