@@ -20,9 +20,13 @@ $form-field-colour: $body-colour;
   }
 }
 
-// Text Input
-.form-text-input {
+// Input
+.form-input {
   @extend %form-field;
+  
+  // @at-root #{&}--text {}
+  // @at-root #{&}--range {}
+  // @at-root #{&}--email {}
 }
 
 // Textarea
