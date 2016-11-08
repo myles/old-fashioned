@@ -8,14 +8,24 @@ $form-field-colour: $body-colour;
   color: $form-field-colour;
   font-family: inherit;
   line-height: $line-height-base;
-  padding: $spacer-x $spacer-y;
+  padding: $spacer-y $spacer-x;
 
   &:disabled {
     opacity: .3;
   }
 
-  @at-root #{&}--small {
+  @at-root #{&}--lg {
+    font-size: $font-size-lg;
+    padding: ($spacer-y / 2) ($spacer-x / 2);
+  }
+
+  @at-root #{&}--sm {
     font-size: $font-size-sm;
+    padding: ($spacer-y / 2) ($spacer-x / 2);
+  }
+
+  @at-root #{&}--xs {
+    font-size: $font-size-xs;
     padding: ($spacer-y / 2) ($spacer-x / 2);
   }
 }
@@ -23,10 +33,30 @@ $form-field-colour: $body-colour;
 // Input
 .form-input {
   @extend %form-field;
-  
-  // @at-root #{&}--text {}
-  // @at-root #{&}--range {}
-  // @at-root #{&}--email {}
+
+  @at-root #{&}--text {
+    display: block;
+    margin-top: ($spacer * .25);
+  }
+
+  @at-root #{&}--range {}
+
+  @at-root #{&}--email {}
+
+  @at-root #{&}--radio {}
+
+  @at-root #{&}--checkbox {
+    display: block;
+    margin-bottom: ($spacer * .75);
+    position: relative;
+  }
+}
+
+// Checkbox
+.form-checkbox {
+  @extend %form-field;
+
+
 }
 
 // Textarea
@@ -37,6 +67,8 @@ $form-field-colour: $body-colour;
 // Select
 .form-select {
   @extend %form-field;
+
+  @at-root #{&}__option {}
 }
 
 // Fieldset
@@ -58,7 +90,7 @@ $fieldset-responses: (
         color: $colour;
       }
 
-      .form-text-input,
+      .form-input,
       .form-textarea,
       .form-select {
         border-color: $colour;

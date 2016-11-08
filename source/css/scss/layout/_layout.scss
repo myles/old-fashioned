@@ -64,6 +64,12 @@
         @at-root #{&}--#{$nest}-of-#{$column} {
           @include span-columns($nest of $column);
         }
+
+        @each $k, $v in $grid-breakpoints {
+          @at-root #{&}--#{$k}-#{$nest}-of-#{$column} {
+            @include span-columns($nest of $column);
+          }
+        }
       }
     }
   }
