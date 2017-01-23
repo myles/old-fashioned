@@ -10,6 +10,7 @@ module.exports = function (grunt) {
       argv = require('minimist')(process.argv.slice(2));
 
   // load all grunt tasks
+  grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-browser-sync');
@@ -63,6 +64,23 @@ module.exports = function (grunt) {
 
 
   grunt.initConfig({
+    /******************************************************
+     * COPY TASKS
+    ******************************************************/
+    sass: {
+      options: {
+        sourceMap: false,
+        includePaths: [
+            'bower_components/bourbon/app/assets/stylesheets/',
+            'bower_components/neat/app/assets/stylesheets/'
+        ]
+      },
+      dist: {
+        files: {
+          'source/css/style.css': 'source/css/style.scss'
+        }
+      }
+    },
 
     /******************************************************
      * COPY TASKS

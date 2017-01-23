@@ -1,0 +1,22 @@
+img,
+video,
+object {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  margin-bottom: $spacer-y;
+}
+
+figure {
+  margin-bottom: $spacer-y;
+
+  img {
+    margin-bottom: $spacer-y / 2;
+  }
+}
+
+figcaption {
+  font-size: italic;
+}

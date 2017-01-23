@@ -1,0 +1,28 @@
+%clearfix {
+  // scss-lint:disable PropertySpelling
+  *zoom: 1;
+  // scss-lint:enable PropertySpelling
+
+  &::before,
+  &::after {
+    content: ' ';
+    display: table;
+  }
+
+  &::after {
+    clear: both;
+  }
+}
+
+%visually-hidden {
+  clip: rect(0 0 0 0);
+  // scss-lint:disable DuplicateProperty
+  clip: rect(0, 0, 0, 0);
+  // scss-lint:enable DuplicateProperty
+  height: 1px;
+  margin: 1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}

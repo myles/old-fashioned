@@ -1,0 +1,40 @@
+.c-progress {
+  @include appearance(none);
+  @include border-radius($border-radius);
+
+  background: $colour-primary;
+  background-size: auto;
+  border: 1px solid $trans-black-50;
+  height: .5rem;
+  margin-bottom: 1em;
+  max-width: 300px;
+  width: 100%;
+
+  &::-moz-progress-bar,
+  &::-webkit-progress-value {
+    @include background-image(linear-gradient(to right, red, #f06d06, rgb(255, 255, 0), green));
+    @include border-radius($border-radius);
+
+    background-color: $colour-utility-notice;
+    background-size: 300px 50px;
+  }
+
+  &[value]::-webkit-progress-bar {
+    @include border-radius($border-radius);
+  }
+
+  @at-root #{&}--anim {
+    &::-moz-progress-bar,
+    &::-webkit-progress-value {
+      @include transition(width 4s ease);
+    }
+  }
+
+  @at-root #{&}--start {
+    &::-moz-progress-bar,
+    &::-webkit-progress-value {
+      background: #cdcaa2 !important;
+      width: 0% !important;
+    }
+  }
+}

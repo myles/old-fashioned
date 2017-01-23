@@ -40,9 +40,7 @@
   @at-root #{&}__cell {
     @extend %td;
 
-    @at-root #{&}--head {
-      @extend %th;
-    }
+    @at-root #{&}--head { @extend %th; }
   }
 }
 
