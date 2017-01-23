@@ -375,18 +375,24 @@ output {
 html {
   font-size: 16px;
   background-color: #24a5d4; }
-  @media screen and (min-width: sm) {
-    html {
-      font-size: 17px; } }
-  @media screen and (min-width: md) {
+  @media screen and (min-width: 24em) {
     html {
       font-size: 18px; } }
-  @media screen and (min-width: lg) {
-    html {
-      font-size: 19px; } }
-  @media screen and (min-width: xl) {
+  @media screen and (min-width: 46.8em) {
     html {
       font-size: 20px; } }
+  @media screen and (min-width: 50em) {
+    html {
+      font-size: 22px; } }
+  @media screen and (min-width: 73em) {
+    html {
+      font-size: 24px; } }
+  @media screen and (min-width: 89em) {
+    html {
+      font-size: 26px; } }
+  @media screen and (min-width: 93em) {
+    html {
+      font-size: 28px; } }
 
 body {
   background-color: #fff;

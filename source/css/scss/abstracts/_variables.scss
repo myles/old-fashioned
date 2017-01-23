@@ -113,10 +113,12 @@ $font-family-base: $font-family-sans-serif !default;
 // Font Size
 $font-size-root: (
   null: 16px,
-  sm: 17px,
-  md: 18px,
-  lg: 19px,
-  xl: 20px
+  sm: 18px,
+  md: 20px,
+  lg: 22px,
+  xl: 24px,
+  xxl: 26px,
+  xxxl: 28px
 ) !default;
 
 $font-size-base: 1rem !default;

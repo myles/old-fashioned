@@ -10,8 +10,8 @@
         "grunt-contrib-watch": "^1.0.0",
         "grunt-sass": "^2.0.0",
         "minimist": "^1.2.0",
-        "patternlab-node": "^2.0.0",
-        "styleguidekit-assets-default": "^3.0.0",
+        "patternlab-node": "^2.7.2",
+        "styleguidekit-assets-default": "^3.4.0",
         "styleguidekit-mustache-default": "^3.0.0"
     },
     "scripts": {

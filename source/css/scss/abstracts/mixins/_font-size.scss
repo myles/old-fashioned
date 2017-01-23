@@ -3,7 +3,7 @@
     @if $breakpoint == null {
       font-size: $font-size;
     } @else {
-      @include media($breakpoint) {
+      @include media(map-get($grid-breakpoints, $breakpoint)) {
         font-size: $font-size;
       }
     }

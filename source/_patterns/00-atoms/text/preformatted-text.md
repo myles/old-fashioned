@@ -1,5 +1,5 @@
 ---
-title: Preformatted Text
+title: Pre-formatted Text
 ---
 
 [Insert description here]

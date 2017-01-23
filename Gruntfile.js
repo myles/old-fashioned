@@ -105,6 +105,7 @@ module.exports = function (grunt) {
     watch: {
       all: {
         files: [
+          path.resolve(paths().source.css + '**/*.scss'),
           path.resolve(paths().source.css + '**/*.css'),
           path.resolve(paths().source.styleguide + 'css/*.css'),
           path.resolve(paths().source.patterns + '**/*'),
@@ -168,7 +169,7 @@ module.exports = function (grunt) {
    * COMPOUND TASKS
   ******************************************************/
 
-  grunt.registerTask('default', ['patternlab', 'copy:main']);
+  grunt.registerTask('default', ['patternlab', 'sass', 'copy:main']);
   grunt.registerTask('patternlab:watch', ['patternlab', 'copy:main', 'watch:all']);
   grunt.registerTask('patternlab:serve', ['patternlab', 'copy:main', 'browserSync', 'watch:all']);
 
